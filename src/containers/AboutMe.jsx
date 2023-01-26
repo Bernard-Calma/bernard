@@ -1,6 +1,8 @@
+import "./AboutMe.css"
+
 const AboutMe = () => {
     return (
-        <section className="sectionAboutMe">
+        <section className="sectionAboutMe" id="idAboutMe">
             <div className="aboutMe">
                 <h1 className = "aboutMeName">Hi! I'm Bernard Calma</h1>
                 <h2 className = "aboutMeOccupation">I'm a Software Engineer</h2>

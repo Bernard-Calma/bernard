@@ -1,0 +1,15 @@
+#idAboutMe {
+    display: flex;
+}
+
+.aboutMe {
+    text-align: center;
+}
+
+
+/* IMAGE */
+.personalImage {
+    width: 500px;
+    border-radius: 50%;
+    margin: 0 5%;
+}
