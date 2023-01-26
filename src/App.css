@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Mono&family=Ubuntu&display=swap');
+
+/* TAG STYLES */
+h1 {
+  font-family: "Russo One", serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1rem;
+}
+
 .App {
   text-align: center;
 }
