@@ -3,7 +3,7 @@ import AboutMe from './containers/AboutMe';
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       App
       <AboutMe />
     </div>

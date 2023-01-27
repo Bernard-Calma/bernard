@@ -1,5 +1,7 @@
 #idAboutMe {
     display: flex;
+    margin: 200px auto;
+    padding: 100px 50px;
 }
 
 .aboutMe {
