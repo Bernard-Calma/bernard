@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import "./Experience.css"
 const Experience = () => {
     const [schools] = useState(
         [{
@@ -54,9 +54,11 @@ const Experience = () => {
             ]
           }]
     )
+
     return (
         <section className="sectionExperience" id="idExperience">
             <h1>Experience</h1>
+            <h2>Education</h2>
         </section>
     )
 }
