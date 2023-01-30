@@ -19,6 +19,7 @@ p {
 section {
   max-width: 1500px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .App {

@@ -1,4 +1,4 @@
-import Project from "./Project"
+import Project from "./SchoolProject"
 import "./School.css"
 
 const School = (props) => {
