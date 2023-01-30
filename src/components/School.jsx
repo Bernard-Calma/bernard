@@ -1,3 +1,4 @@
+import Project from "./Project"
 import "./School.css"
 
 const School = (props) => {
@@ -9,6 +10,12 @@ const School = (props) => {
                 <p className="course">{`${props.school.course}(${props.school.degree})`}</p>
                 <p className = "yearGraduated">{props.school.yearGraduate}</p>
                 <p className = "courseDescription">{props.school.description}</p>
+                { props.school.projects.map((project, index) => 
+                    <Project 
+                        key={index}
+                        project={project}
+                    />
+                )}
             </div>
         </div>
     )
