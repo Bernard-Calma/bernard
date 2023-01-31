@@ -21,6 +21,25 @@
     font-weight: bold;
 }
 
+.projectImage {
+    width: 1000px;
+}
+
+.projectSummary {
+    padding: 0 10%;
+}
+
+.skillList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.skillItem {
+    margin: 0 3%;
+}
+
+
 @media screen and (max-width: 1100px) {
     .schoolLogo{
         float: none;
@@ -28,5 +47,10 @@
     .schoolInfo {
         text-align: center;
         padding: 0 10%;
+    }
+
+    /* PROJECT DIV */
+    .projectImage {
+        display: none;
     }
 }
