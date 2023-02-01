@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import AboutMe from './containers/AboutMe';
 import Experience from './containers/Experience';
 import Projects from './containers/Projects';
@@ -10,6 +11,7 @@ const App = () => {
       <AboutMe />
       <Experience />
       <Projects />
+      <Footer />
     </div>
   )
 }
