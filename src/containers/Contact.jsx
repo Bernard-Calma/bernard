@@ -1,3 +1,5 @@
+import SendEmail from "../components/SendEmail"
+
 const Contact = () => {
     return(
         <section className="sectionContact">
@@ -10,21 +12,8 @@ const Contact = () => {
                 <ul class="contactInformation">
                     <li>Location: Lancaster, CA</li>
                     <li>Email: <a class="mailTo" href="mailto:nard.calma@gmail.com">nard.calma@gmail.com</a></li>
-                    <form className="formContactMe" onSubmit={""}>
-                        <label for="senderName">Your Name: 
-                            <input type="text" name="senderName" id="senderName" />
-                        </label>
-                        <label for="senderEmail">Your Email: 
-                            <input type="text" name="senderEmail" id="senderEmail" />
-                        </label>
-                        <label for="senderSubject">Subject: 
-                            <input type="text" name="senderSubject" id="senderSubject" />
-                        </label>
-                        <label className="senderMessage">Your Message: </label>
-                        <textarea placeholder="enter your message here" name="senderMessage" id="senderMessage"></textarea>
-                        <input type="submit" name="submitMessage" id="submitMessage" value="Send" />
-                    </form>
             </ul>
+            <SendEmail />
         </section>
     )
 }
