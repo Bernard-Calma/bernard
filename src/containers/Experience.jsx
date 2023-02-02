@@ -2,6 +2,8 @@ import { useState } from "react"
 import School from "../components/School"
 import "./Experience.css"
 const Experience = () => {
+    const [display, setDisplay] = useState(0)
+
     const [schools] = useState(
         [{
             name: "Arizona State University",
@@ -47,17 +49,43 @@ const Experience = () => {
           }]
     )
 
+    const [works] = useState([
+        {
+            name: "Sutherland Global Services",
+            companyLogo: "",
+            position: "Subject Matter Expert",
+            yearStarted: "",
+            yearEnded: "",
+            jobDescription: "",
+        },
+    ])
+
+    const handleChangeDisplay = (display) => {
+        if (display === 0) setDisplay(0)
+        else setDisplay(1);
+    }
+
     return (
         <section className="sectionExperience" id="idExperience">
             <h1>EXPERIENCE</h1>
-            <h2>Education</h2>
-            {schools.map((school, index) => 
-                <School 
-                    key = {index}
-                    school = {school}
-                    index = {index}
-                />
-            )}
+            <h2><a onClick={() => handleChangeDisplay(0)}>Education</a> | <a onClick={() => handleChangeDisplay(1)}>Professional</a></h2> 
+            
+            {
+                display === 0
+                ?
+                <>
+                {schools.map((school, index) => 
+                    <School 
+                        key = {index}
+                        school = {school}
+                        index = {index}
+                    />
+                )}
+                </>
+                :
+                <></>
+            }
+            
         </section>
     )
 }
