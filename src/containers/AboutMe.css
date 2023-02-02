@@ -1,11 +1,19 @@
 #idAboutMe {
     display: flex;
-    margin: 100px auto;
+    margin: 200px auto;
     padding: 20px;
 }
 
 .aboutMe {
     text-align: center;
+}
+
+.aboutMeName {
+    margin-bottom: 0;
+}
+
+.aboutMeOccupation {
+    margin: 0;
 }
 
 
@@ -20,11 +28,13 @@
     #idAboutMe {
         display: flex;
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 0 20px;
+        margin-top: 60px;
     }
 
+
     .personalImage {
-        margin: 20px auto 0;
+        margin: 0 auto;
         width: 400px;
     }
 }
