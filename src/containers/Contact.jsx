@@ -2,7 +2,7 @@ import SendEmail from "../components/SendEmail"
 
 const Contact = () => {
     return(
-        <section className="sectionContact">
+        <section className="sectionContact" id="idContact">
             <h1>Let's Connect</h1>
             <ul class="socialMedia">
                     <li class = "socialMediaItem"><a href="https://www.linkedin.com/in/bernard-calma/" target="_blank"  rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>

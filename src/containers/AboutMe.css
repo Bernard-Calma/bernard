@@ -20,7 +20,7 @@
     #idAboutMe {
         display: flex;
         flex-direction: column;
-        padding: 0 20px;
+        padding: 50px 20px;
     }
 
     .personalImage {
