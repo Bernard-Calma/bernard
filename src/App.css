@@ -20,6 +20,7 @@ section {
   max-width: 1500px;
   margin: 0 auto;
   text-align: center;
+  padding: 60px 20px 0px;
 }
 
 .App {
@@ -78,7 +79,11 @@ input[type=submit] {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px
+  margin: 110px 0 20px;
+}
+
+footer > p {
+  background-color: rgb(101, 198, 243);
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -7,7 +7,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 2%;
-    background-color: beige;
+    background-color: rgb(101, 198, 243);
 }
 
 .personalLogo {
