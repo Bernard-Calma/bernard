@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%
+}
+
+.personalLogo {
+    width: 150px;
+}

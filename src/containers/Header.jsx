@@ -1,3 +1,6 @@
+import Navbar from "../components/NavBar";
+import "./Header.css"
+
 const Header = () => {
     return (
         <header>
@@ -5,8 +8,9 @@ const Header = () => {
                 src="/images/TitleLogo.png" 
                 alt="Title Logo"
                 width="100"
-                className="logo"
+                className="personalLogo"
             />
+            <Navbar />
         </header>
     )
 }
