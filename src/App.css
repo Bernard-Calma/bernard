@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Mono&family=Ubuntu&display=swap');
 
+html {
+  /* for smooth scrolling when clicking on navbar */
+  scroll-behavior: smooth;
+}
+
 /* TAG STYLES */
 h1 {
   font-family: "Russo One", serif;
@@ -114,4 +119,8 @@ footer > p {
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes navigate {
+  
 }

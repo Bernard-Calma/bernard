@@ -1,9 +1,4 @@
 const Navbar = () => {
-
-    const onClick = () => {
-
-    }
-
     return(
         <div className="sectioNavBar">
             <ul className="containerNavBar">
