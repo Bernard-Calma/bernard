@@ -1,4 +1,5 @@
 import { useState } from "react"
+import ProjectChange from "../buttons/ProjectChange"
 import Project from "../components/Project"
 
 const Projects = () => {
@@ -33,14 +34,21 @@ const Projects = () => {
         }]
     )
 
+    const changeProject = (prev, next) => {
+        console.log(prev);
+        console.log(next)
+    }
+
     return(
         <section className="sectionProjects" id="idProjects">
             <h1>PROJECTS</h1>
+            <ProjectChange />
             {
                 projects.map((project, index) =>
                     <Project 
                         key={index}
                         project={project}
+                        changeProject = {changeProject}
                     />
                 )
             }
