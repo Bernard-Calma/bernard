@@ -47,6 +47,7 @@ const Projects = () => {
                 projects.map((project, index) =>
                     <Project 
                         key={index}
+                        index={index}
                         project={project}
                         changeProject = {changeProject}
                     />

@@ -1,0 +1,11 @@
+.buttonNext{
+    rotate: 180deg;
+    position: absolute;
+    padding: 300px 520px;
+}
+
+.buttonPrevious {
+    position: absolute;
+    left: 80pt;
+    padding: 300px 0;
+}
