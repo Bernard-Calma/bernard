@@ -1,10 +1,9 @@
 import "./ProjectChange.css"
 
-const ProjectChange = () => {
+const ProjectChange = (props) => {
     return (
         <div className="divProjectChange">
-            <img src="/images/changeProjectButton.png" className="buttonPrevious" alt="Previous Button"/>
-            <img src="/images/changeProjectButton.png" className="buttonNext" alt="Next Button"/>
+            <img src="/images/changeProjectButton.png" className={`${props.className}`} alt="Previous Button"/>
         </div>
     )
 }

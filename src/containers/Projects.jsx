@@ -42,7 +42,6 @@ const Projects = () => {
     return(
         <section className="sectionProjects" id="idProjects">
             <h1>PROJECTS</h1>
-            <ProjectChange />
             {
                 projects.map((project, index) =>
                     <Project 

@@ -1,11 +1,9 @@
-.buttonNext{
-    rotate: 180deg;
-    position: absolute;
-    padding: 300px 520px;
+.divProjectChange {
+    align-self: center;
+    margin: 10px;
+    z-index: -1;
 }
 
 .buttonPrevious {
-    position: absolute;
-    left: 80pt;
-    padding: 300px 0;
+    rotate: 180deg;
 }
