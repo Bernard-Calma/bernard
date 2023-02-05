@@ -34,9 +34,8 @@ const Projects = () => {
         }]
     )
 
-    const changeProject = (prev, next) => {
-        console.log(prev);
-        console.log(next)
+    const changeProject = (index) => {
+        console.log(index);
     }
 
     return(
@@ -48,7 +47,7 @@ const Projects = () => {
                         key={index}
                         index={index}
                         project={project}
-                        changeProject = {changeProject}
+                        changeProject = {() => changeProject(index)}
                     />
                 )
             }

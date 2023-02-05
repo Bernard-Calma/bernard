@@ -1,9 +1,6 @@
 import "./ProjectChange.css"
 
 const ProjectChange = (props) => {
-    const handleChangeProject = () => {
-        console.log("click")
-    }
     return (
         <div className="divProjectChange" >
             { props.direction === "previous" ?
@@ -11,14 +8,14 @@ const ProjectChange = (props) => {
                 src="/images/buttonPrevious.png" 
                 className="buttonPrevious"
                 alt="Button Previous"
-                onClick={handleChangeProject}
+                onClick={props.changeProject}
                 />
                 : 
                 <img 
                 src="/images/buttonNext.png" 
                 className="buttonNext"
                 alt="Button Next"
-                onClick={handleChangeProject}
+                onClick={props.changeProject}
                 />
             }
             

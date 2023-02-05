@@ -7,10 +7,14 @@ const Project = (props) => {
             <div className="containerImage">
                 <ProjectChange 
                     direction = "previous"
+                    index = {props.index}
+                    changeProject = {props.changeProject}
                 />
                 <img className="projectImage" src={props.project.screenshot} alt={props.project.name}/>
                 <ProjectChange 
                     direction = "next"
+                    index = {props.index}
+                    changeProject = {props.changeProject}
                 />
             </div>
             <p className="projectSummary">{props.project.summary}</p>
