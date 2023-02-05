@@ -2,7 +2,7 @@ import ProjectChange from "../buttons/ProjectChange";
 
 const Project = (props) => {
     return(
-        <div className={`divProject ${props.index === 0 ? "" : "hidden"}`}>
+        <div className={`divProject ${props.index === props.show ? "" : "hidden"}`}>
             <h2 className="projectTitle">{props.project.name}</h2>
             <div className="containerImage">
                 <ProjectChange 

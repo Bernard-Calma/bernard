@@ -34,16 +34,18 @@ const Projects = () => {
         }]
     )
 
-    const [show, setShow] = useState(0)
+    let [show, setShow] = useState(0)
 
     const nextProject = (index) => {
-        // console.log(index);
-        console.log("next")
+        if(index === 0){
+            setShow(projects.length-1)
+        } else setShow(show -= 1)
     }
 
     const previousProject = (index) => {
-        // console.log(index);
-        console.log("previous")
+        if(index === 0){
+            setShow(projects.length-1)
+        } else setShow(show -= 1)
     }
 
     return(
