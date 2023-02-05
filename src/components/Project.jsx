@@ -1,21 +1,16 @@
 import ProjectChange from "../buttons/ProjectChange";
 
 const Project = (props) => {
-
-    const handleChangeProject = () => {
-        console.log(this)
-    }
     return(
         <div className={`divProject ${props.index === 0 ? "" : "hidden"}`}>
             <h2 className="projectTitle">{props.project.name}</h2>
             <div className="containerImage">
                 <ProjectChange 
-                
+                    direction = "previous"
                 />
-                <img className="projectImage" src={props.project.screenshot} alt={props.project.name} />
+                <img className="projectImage" src={props.project.screenshot} alt={props.project.name}/>
                 <ProjectChange 
-                    className = "buttonPrevious"
-                    onClick = {() => handleChangeProject}
+                    direction = "next"
                 />
             </div>
             <p className="projectSummary">{props.project.summary}</p>

@@ -1,9 +1,4 @@
 .divProjectChange {
     align-self: center;
     margin: 10px;
-    z-index: -1;
-}
-
-.buttonPrevious {
-    rotate: 180deg;
 }

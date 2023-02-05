@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
-    z-index: 2;
+    z-index: 99;
 }
 
 .containerNavBar {
