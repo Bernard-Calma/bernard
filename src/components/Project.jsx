@@ -8,13 +8,13 @@ const Project = (props) => {
                 <ProjectChange 
                     direction = "previous"
                     index = {props.index}
-                    changeProject = {props.changeProject}
+                    previousProject = {props.previousProject}
                 />
                 <img className="projectImage" src={props.project.screenshot} alt={props.project.name}/>
                 <ProjectChange 
                     direction = "next"
                     index = {props.index}
-                    changeProject = {props.changeProject}
+                    nextProject = {props.nextProject}
                 />
             </div>
             <p className="projectSummary">{props.project.summary}</p>

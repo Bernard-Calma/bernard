@@ -8,14 +8,14 @@ const ProjectChange = (props) => {
                 src="/images/buttonPrevious.png" 
                 className="buttonPrevious"
                 alt="Button Previous"
-                onClick={props.changeProject}
+                onClick={props.previousProject}
                 />
                 : 
                 <img 
                 src="/images/buttonNext.png" 
                 className="buttonNext"
                 alt="Button Next"
-                onClick={props.changeProject}
+                onClick={props.nextProject}
                 />
             }
             

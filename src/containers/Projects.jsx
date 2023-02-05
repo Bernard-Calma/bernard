@@ -34,8 +34,16 @@ const Projects = () => {
         }]
     )
 
-    const changeProject = (index) => {
-        console.log(index);
+    const [show, setShow] = useState(0)
+
+    const nextProject = (index) => {
+        // console.log(index);
+        console.log("next")
+    }
+
+    const previousProject = (index) => {
+        // console.log(index);
+        console.log("previous")
     }
 
     return(
@@ -47,7 +55,9 @@ const Projects = () => {
                         key={index}
                         index={index}
                         project={project}
-                        changeProject = {() => changeProject(index)}
+                        show = {show}
+                        nextProject = {() => nextProject(index)}
+                        previousProject = {() => previousProject(index)}
                     />
                 )
             }
