@@ -1,6 +1,8 @@
 import { useState } from "react"
 import School from "../components/School"
+import Work from "../components/Work"
 import "./Experience.css"
+
 const Experience = () => {
     const [display, setDisplay] = useState(0)
 
@@ -54,9 +56,9 @@ const Experience = () => {
             name: "Sutherland Global Services",
             companyLogo: "",
             position: "Subject Matter Expert",
-            yearStarted: "",
-            yearEnded: "",
-            jobDescription: "",
+            yearStarted: "2014",
+            yearEnded: "2018",
+            jobDescription: "Job Description",
         },
     ])
 
@@ -83,7 +85,17 @@ const Experience = () => {
                 )}
                 </>
                 :
-                <></>
+                <>
+                {
+                    works.map((work, index) => 
+                        <Work 
+                            key = {index}
+                            index = {index}
+                            work = {work}
+                        />
+                    )
+                }
+                </>
             }
             
         </section>
