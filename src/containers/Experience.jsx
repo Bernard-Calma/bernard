@@ -53,6 +53,25 @@ const Experience = () => {
 
     const [works] = useState([
         {
+            name: "CompuCom",
+            companyLogo: "https://pbs.twimg.com/profile_images/1521524424981286919/jKZuKS3P_400x400.png",
+            positions: [
+                {
+                    name: "Field Service Technician",
+                    monthStarted: "August",
+                    yearStarted: "2021",
+                    monthEnded:"Current",
+                    yearEnded: "",
+                    jobDescriptions: [
+                        "Manages preventive maintenance and incidents with little to no supervision for multiple stores.",
+                        "Travels across the region and determine the best route to cover all assigned stores and issues the most efficient way.",
+                        "Inspects and troubleshoots cash registers and peripherals, terminals, printers, phone, network equipment.",
+                        "Assist the regional lead on training the new technicians and provide emergency services to store with critical issue/s."
+                    ],
+                },
+            ]
+        },  
+        {
             name: "Robert Half",
             companyLogo: "https://www.roberthalf.com/themes/custom/rhalf/assets/images/robert-half-social-logo.gif",
             positions: [
