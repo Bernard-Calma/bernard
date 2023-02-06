@@ -1,14 +1,20 @@
 .divWork {
     display: grid;
     grid-template-columns: auto auto;
-    margin: 10% auto;
+    margin: 5% auto;
 }
 
 .workInfo {
     text-align: left;
-    padding: 0 10% 0 20%;
+    padding: 0 20%;
 }
 
 .jobDescription {
     list-style: circle;
+}
+
+.companyLogo {
+    width: 300px;
+    height: 300px;
+    padding-left: 100px;
 }

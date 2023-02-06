@@ -53,6 +53,25 @@ const Experience = () => {
 
     const [works] = useState([
         {
+            name: "Turner Techtronics",
+            companyLogo: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/omvytbar9uxf3xylpzya",
+            positions: [
+                {
+                    name: "Domain Migration Technician",
+                    monthStarted: "March",
+                    yearStarted: "2014",
+                    monthEnded:"July",
+                    yearEnded: "2017",
+                    jobDescriptions: [
+                        "Handled the migration of all client’s company owned equipment to their new domain.",
+                        "Reached out to employees to set up a remote appointment to schedule the migration of their machine/s. ",
+                        "Remoted into client’s mac/windows to install required applications and files to run scripts that moves the machine/s and user’s profile to the new domain.",
+                        "Troubleshoot and fix any pre and post migration issue to make sure that all files and applications that the client uses are all working and error free.",
+                    ],
+                },
+
+            ]},  
+        {
             name: "Sutherland Global Services",
             companyLogo: "https://remoteco.s3.amazonaws.com/wp-content/uploads/2015/12/sutherland.jpg",
             positions: [
