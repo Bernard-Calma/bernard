@@ -1,12 +1,13 @@
 .divWork {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1000px;
     margin: 5% auto;
 }
 
 .workInfo {
     text-align: left;
     padding: 0 20%;
+    align-self: center;
 }
 
 .jobDescription {
