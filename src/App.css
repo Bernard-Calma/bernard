@@ -82,11 +82,13 @@ input[type=submit] {
 /* FOOTER */
 footer {
   text-align: center;
-  margin: 110px 0 20px;
+  margin: 110px 0 0;
+  height: 30px;
+  background-color: rgb(101, 198, 243);
 }
 
 footer > p {
-  background-color: rgb(101, 198, 243);
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
