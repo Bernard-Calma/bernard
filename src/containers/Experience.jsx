@@ -58,11 +58,31 @@ const Experience = () => {
             positions: [
                 {
                     name: "Subject Matter Expert",
+                    monthStarted: "March",
                     yearStarted: "2014",
-                    yearEnded: "2018",
-                    jobDescription: `Resolved complex issues in any aspect of the telecommunication network infrastructure. \n Exceeded metric goals and consistently in monthly top 3 performers for 4 years while providing other support. `,
+                    monthEnded:"July",
+                    yearEnded: "2017",
+                    jobDescriptions: [
+                        "Provided support and management to different teams and projects to improve service level for different accounts.",
+                        "Supervised meetings/huddles with different teams to provide action plans and coachings to improve the team's stats",
+                        "Collaborated with upper management and other departments to analyze data and process quality to make sure it meets the client’s requirements and exceeds expectations.",
+                        "Handled customer’s issues and concerns regarding their Internet, Analog/Digital Phone and TV and provided troubleshooting steps to resolve any issue.",
+                    ],
                 },
-            ]},
+                {
+                    name: "Associate Lead Programmer",
+                    monthStarted: "August",
+                    yearStarted: "2017",
+                    monthEnded:"Feb",
+                    yearEnded: "2018",
+                    jobDescriptions: [
+                        "Created an app that automates 10+ web tools into one single page application and runs simultaneously by one button.",
+                        "Collaborated with management and other departments for the development and deployment process of the app.",
+                        "Conducted alpha and beta test for deployment and trained user to utilize tool",
+                        "Improved application performance, analyzed feedback and test results and fixed issue and bugs",
+                    ],
+                },
+            ]},  
     ])
 
     const handleChangeDisplay = (display) => {

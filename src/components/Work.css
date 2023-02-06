@@ -8,3 +8,7 @@
     text-align: left;
     padding: 0 10% 0 20%;
 }
+
+.jobDescription {
+    list-style: circle;
+}
