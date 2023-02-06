@@ -53,6 +53,25 @@ const Experience = () => {
 
     const [works] = useState([
         {
+            name: "Robert Half",
+            companyLogo: "https://www.roberthalf.com/themes/custom/rhalf/assets/images/robert-half-social-logo.gif",
+            positions: [
+                {
+                    name: "Field Service Technician",
+                    monthStarted: "October",
+                    yearStarted: "2021",
+                    monthEnded:"November",
+                    yearEnded: "2022",
+                    jobDescriptions: [
+                        "Presidential Election 2020",
+                        "California Gubernatorial Recall Election",
+                        "June 2022 California Primary Election",
+                        "2022 United States elections (Roaming Field Service Technician)"
+                    ],
+                },
+            ]
+        },  
+        {
             name: "Turner Techtronics",
             companyLogo: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/omvytbar9uxf3xylpzya",
             positions: [
@@ -69,8 +88,8 @@ const Experience = () => {
                         "Troubleshoot and fix any pre and post migration issue to make sure that all files and applications that the client uses are all working and error free.",
                     ],
                 },
-
-            ]},  
+            ]
+        },  
         {
             name: "Sutherland Global Services",
             companyLogo: "https://remoteco.s3.amazonaws.com/wp-content/uploads/2015/12/sutherland.jpg",
@@ -101,7 +120,8 @@ const Experience = () => {
                         "Improved application performance, analyzed feedback and test results and fixed issue and bugs",
                     ],
                 },
-            ]},  
+            ]
+        },  
     ])
 
     const handleChangeDisplay = (display) => {
