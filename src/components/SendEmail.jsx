@@ -5,7 +5,6 @@ const SendEmail = () => {
         senderName: "",
         senderEmail: "",
         senderSubject: "",
-        senderSubject: "",
         senderMessage: "",
     })
 
@@ -18,7 +17,6 @@ const SendEmail = () => {
         setEmailContent({
             senderName: "",
             senderEmail: "",
-            senderSubject: "",
             senderSubject: "",
             senderMessage: "",
         })

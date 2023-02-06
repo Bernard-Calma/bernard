@@ -54,11 +54,11 @@ const Experience = () => {
     const [works] = useState([
         {
             name: "Sutherland Global Services",
-            companyLogo: "",
+            companyLogo: "https://remoteco.s3.amazonaws.com/wp-content/uploads/2015/12/sutherland.jpg",
             position: "Subject Matter Expert",
             yearStarted: "2014",
             yearEnded: "2018",
-            jobDescription: "Job Description",
+            jobDescription: `Resolved complex issues in any aspect of the telecommunication network infrastructure. \n Exceeded metric goals and consistently in monthly top 3 performers for 4 years while providing other support. `,
         },
     ])
 
@@ -70,7 +70,7 @@ const Experience = () => {
     return (
         <section className="sectionExperience" id="idExperience">
             <h1>EXPERIENCE</h1>
-            <h2><a onClick={() => handleChangeDisplay(0)}>Education</a> | <a onClick={() => handleChangeDisplay(1)}>Professional</a></h2> 
+            <h2><span onClick={() => handleChangeDisplay(0)}>Education</span> | <span onClick={() => handleChangeDisplay(1)}>Professional</span></h2> 
             
             {
                 display === 0

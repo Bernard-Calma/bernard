@@ -1,5 +1,4 @@
 import { useState } from "react"
-import ProjectChange from "../buttons/ProjectChange"
 import Project from "../components/Project"
 
 const Projects = () => {
