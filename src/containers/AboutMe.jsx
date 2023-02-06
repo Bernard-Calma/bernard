@@ -12,14 +12,38 @@ const AboutMe = () => {
                 <div className="aboutMeSkills">
                     <h1 className="skillsHeader">Skills</h1>
                     <ul className="skillsList">
-                        <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/react-native.png" alt="react" /></li>
+                        <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/html-5.png" alt="html" /></li>
                         <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/css3.png" alt="css" /></li>
                         <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/javascript.png" alt="javascript" /></li>
+                        <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/react-native.png" alt="react" /></li>
                         <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/python.png" alt="python" /></li>
                         <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/postgreesql.png" alt="postgresql" /></li>
                         <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/mongodb.png" alt="mongodb" /></li>
                         <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/flask.png" alt="flask" /></li>
+                        <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/nodejs.png" alt="node js" /></li>
+                        <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/express-js.png" alt="express js" /></li>
+                        <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/github.png" alt="github" /></li>
+                        <li className="skillItem"><img className="skillIcon" src="https://img.icons8.com/color/256/bootstrap.png" alt="bootstrap" /></li>
                     </ul>
+                </div>
+                <div className="skillsSmallScreen" hidden>
+                    <h1 className="skillsHeader">Skills</h1>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React </li>
+                        <li>React Native </li>
+                        <li>Python</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Flask</li>
+                        <li>NodeJS</li>
+                        <li>ExpressJS</li>
+                        <li>Github</li>
+                        <li>Bootstrap</li>
+                    </ul>
+
                 </div>
         </section>
     )

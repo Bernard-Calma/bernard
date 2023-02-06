@@ -9,11 +9,13 @@ html {
 h1 {
   font-family: "Russo One", serif;
   font-size: 3rem;
+  margin-bottom: 0;
 }
 
 h2 {
   font-family: "Ubuntu", sans-serif;
   font-size: 2rem;
+  margin: 0;
 }
 
 p {

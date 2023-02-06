@@ -60,10 +60,31 @@
         padding: 20px 10px 0;
     }
 
+    .aboutMeSkills {
+        display: none;
+    }
 
     .personalImage {
         margin: 0 auto;
         width: 400px;
         height: 400px;
+    }
+
+    .skillsSmallScreen {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .skillsSmallScreen > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skillsSmallScreen > ul > li{
+        margin: 1%;
+        
     }
 }
