@@ -1,0 +1,10 @@
+.divWork {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10% auto;
+}
+
+.workInfo {
+    text-align: left;
+    padding: 0 10% 0 20%;
+}

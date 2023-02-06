@@ -55,11 +55,14 @@ const Experience = () => {
         {
             name: "Sutherland Global Services",
             companyLogo: "https://remoteco.s3.amazonaws.com/wp-content/uploads/2015/12/sutherland.jpg",
-            position: "Subject Matter Expert",
-            yearStarted: "2014",
-            yearEnded: "2018",
-            jobDescription: `Resolved complex issues in any aspect of the telecommunication network infrastructure. \n Exceeded metric goals and consistently in monthly top 3 performers for 4 years while providing other support. `,
-        },
+            positions: [
+                {
+                    name: "Subject Matter Expert",
+                    yearStarted: "2014",
+                    yearEnded: "2018",
+                    jobDescription: `Resolved complex issues in any aspect of the telecommunication network infrastructure. \n Exceeded metric goals and consistently in monthly top 3 performers for 4 years while providing other support. `,
+                },
+            ]},
     ])
 
     const handleChangeDisplay = (display) => {
