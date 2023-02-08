@@ -97,19 +97,9 @@ const AboutMe = () => {
                 <div className="skillsSmallScreen" hidden>
                     <h1 className="skillsHeader">Skills</h1>
                     <ul className="skillsList">
-                        {/* <li className="skillItem">HTML</li> */}
-                        {/* <li className="skillItem">CSS</li> */}
-                        <li className="skillItem">JavaScript</li>
-                        <li className="skillItem">React </li>
-                        <li className="skillItem">React Native </li>
-                        <li className="skillItem">Python</li>
-                        <li className="skillItem">PostgreSQL</li>
-                        <li className="skillItem">MongoDB</li>
-                        <li className="skillItem">Flask</li>
-                        <li className="skillItem">NodeJS</li>
-                        {/* <li className="skillItem">ExpressJS</li> */}
-                        <li className="skillItem">Github</li>
-                        <li className="skillItem">Bootstrap</li>
+                        { skillsList.map((skill, index) => 
+                            <li className="skillItem">{skill.skill}</li>
+                        )}
                     </ul>
                 </div>
         </section>
