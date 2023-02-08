@@ -7,13 +7,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 2%;
-    background-color: rgb(101, 198, 243);
+    background-color: rgb(124, 174, 189);
 }
 
 .personalLogo {
     width: 80px;
     height: 70px;
     margin: auto 0;
+    
 }
 
 
@@ -32,7 +33,17 @@ header {
 
 .navBarItem {
     margin: 0 30px;
-    
+    font-family: "Russo One", serif;
+    font-size: 2rem;
+}
+
+.navBarItem > a {
+    text-decoration: none;
+    color: rgb(21, 23, 116);
+}
+
+.navBarItem > a:hover {
+    color: rgb(175, 230, 240);
 }
 
 
@@ -49,5 +60,6 @@ header {
 
     .navBarItem {
         margin: 3px 10px;
+        font-size: 1rem;
     }
 }
