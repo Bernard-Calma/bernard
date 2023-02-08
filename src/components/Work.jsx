@@ -8,7 +8,7 @@ const Work = (props) => {
                 <h2 className="companyName">{props.work.name}</h2>
                 {props.work.positions.map((position, index) =>
                     <div className="containerPosition" key={index}>
-                        <p className="position">{position.name} ({position.monthStarted} {position.yearStarted} - {position.monthEnded} {position.yearEnded})</p>
+                        <p className="position">{position.name} ({position.monthStarted} {position.yearStarted} - {position.monthEnded}{position.yearEnded? ` ${position.yearEnded}`: ``})</p>
                         <ul>
                             {
                                 position.jobDescriptions.map((description, index) => 
