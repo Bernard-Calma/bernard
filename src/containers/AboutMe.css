@@ -66,32 +66,9 @@
         margin: 40px auto;
     }
 
-    .aboutMeSkills {
-        display: none;
-    }
-
     .personalImage {
         margin: 0 auto 10px;
         width: 400px;
         height: 400px;
-    }
-
-    .skillsSmallScreen {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .skillsSmallScreen > ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0;
-    }
-
-    .skillsSmallScreen > ul > li{
-        margin: 1%;
-        
     }
 }

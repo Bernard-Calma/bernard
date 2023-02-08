@@ -94,14 +94,6 @@ const AboutMe = () => {
                         )}
                     </ul>
                 </div>
-                <div className="skillsSmallScreen" hidden>
-                    <h1 className="skillsHeader">Skills</h1>
-                    <ul className="skillsList">
-                        { skillsList.map((skill, index) => 
-                            <li className="skillItem">{skill.skill}</li>
-                        )}
-                    </ul>
-                </div>
         </section>
     )
 }
