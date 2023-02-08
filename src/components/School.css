@@ -61,7 +61,7 @@
     }
 
     /* PROJECT DIV */
-    .containerImage {
-        display: none;
+    .projectImage {
+        width: 450px;
     }
 }
