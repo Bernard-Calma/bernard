@@ -92,7 +92,7 @@ const Experience = () => {
         },  
         {
             name: "Turner Techtronics",
-            companyLogo: "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/omvytbar9uxf3xylpzya",
+            companyLogo: "https://media.glassdoor.com/sqll/1270800/turner-techtronics-squarelogo-1501595747521.png",
             positions: [
                 {
                     name: "Domain Migration Technician",
