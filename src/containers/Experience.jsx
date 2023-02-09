@@ -151,7 +151,15 @@ const Experience = () => {
     return (
         <section className="sectionExperience" id="idExperience">
             <h1>EXPERIENCE</h1>
-            <h2><span onClick={() => handleChangeDisplay(0)}>Education</span> | <span onClick={() => handleChangeDisplay(1)}>Professional</span></h2> 
+            <h2 className="experienceNavContainer">
+                <span 
+                    className={display === 0 ? "experienceNav cursorPointer" : "cursorPointer"}
+                    onClick={() => handleChangeDisplay(0)}>Education
+                </span> | <span 
+                    className={display === 1 ? "experienceNav cursorPointer" : "cursorPointer"}
+                    onClick={() => handleChangeDisplay(1)}>Professional
+                </span>
+            </h2> 
             
             {
                 display === 0
