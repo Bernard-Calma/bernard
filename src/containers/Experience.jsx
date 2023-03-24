@@ -73,7 +73,7 @@ const Experience = () => {
         },  
         {
             name: "Robert Half",
-            companyLogo: "https://www.roberthalf.com/themes/custom/rhalf/assets/images/robert-half-social-logo.gif",
+            companyLogo: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAC8CAMAAAC672BgAAAAkFBMVEWnCSX///+mACGhAACmASKwMUK1RlO1SFWvLD/06eqtJDixOEemAB7gu7+1S1flxcmiAAasHDOlABujABGjAAz68/TAaXP++vvMipGjABDy4uTaq7CkABbRlZzTnKKyPUzCcHm7V2Pw3N7gub2qFi7pz9LHfIS8X2nWo6jIg4rcsLXlxMjpzdDBbXe5VGDRmJ6v9CWqAAAE7UlEQVR4nO3d63aaQBiFYWDQqCFKAOMhGIwxqdG0vf+7q/YQtweYb3AIlrXfv1jW8CwdkMHGeWjXVKvr6mp97YienXbk1ZPSY6gvHVDQcW48p54kGF86IJ8Y+4gBEQMiBkQMiBgQMSBiQMSAiAERAyIGRAyIGBAxIGJAxICIAREDIgZEDIgYEDEgYkDEgIgBEQMiBkQMiBgQMSBiQMSAiAH9rxi+FwSe5/tWB1Q1hh/FoVJhMkmUOh55OYwg3e4wXXay7LbjpGq78ziyZFIpRpAo/+HpbjEcbY9rNFoejdkcw9sefH+83eHnC0bd15enh+WWx8JRGGH4ug5enKpsNcUjuxQjVffj1/OvGw7GPRVf+gYxwrjXtR+Nn0zGx8fqXILhT9TbovC105mjgq/C8HrasQf/DjeOV6dbL8GIk9lI+2p30L+Iwy7G35ksUONzW8tjRGosoNi16Kvyk0cVGKp9/ihLY6gf+ld+NnDi68Hw1VPO1pIYnnqUU+x6OzmJ14URxDkTflmMaDnVvuyowaTczGEbI+0Mc7eWwogz4WyBde+jK8CYtAu2lsFIvhkYQFlaO4bqF20tg1HSwnXbJTTsYmSFW0tgtMQHf/pPzT8pdjGKP94lMPInIP1YPOMLDrsYxZXAuKSF8c2QBmO4K1ONJmO4fcNpo9EYXcO3RqMx3FlCjH2B0beUhmM8hsTYZ3T/vOkYTxNifDYyOaE0HcN9MLjWaDzGwOCt0XgM1+B80nyMufzGRvMxNvLPSfMxhsSAbsW3yv8rjO5mNX6fv8/WuasR53oXTxoVY4wWg83Len23+Vh0y6zCQ9NxT6kk3RYnKvwu97gTn08qxBiuvy93z5KESRiqXcc7NMFYPB8+gRGpVvGa/L6peNKoDOPjhwqj4j0bYLypkwvJnNXtM9WNMW2fjr48xrB19iaNdFElk86g1WCsRI9JSDGGXg6scLltLv16UgnGXPbGFGKMnFzZ3AX/g35Kv8ZXgSG0kGLcFJwalWSFfi29E1oBxk/phCXDKFz9iG4Ee/iQDsg+hnwhS4ShuZpWgusN8bnVPkZPfPUrwngvfigpEsyh4m8n1jFe5N+LJBja23ZK/yyL+NafdYx7+dq3BONRN/mFL/qdSK/HbWOIJytHhtHWfejSuX4n0sf/bGOIL3Ac2fMZWlvJqI6/LudlG8PkzrwAQ3A7VzBp9IRHaBnj1TLGTP8OF1x33daDYbSAJcAQrHoIrjRuhGd7yxgmSzYSDMEtO7XR7qVfD4b00/nnMPQYnn7qC++uFcPoURk7P9i7Wgyz54YajmH2tGHDMUyuPxuPYbCU5xDjoIZjmDwMQYyDiAERAyIGRAyIGBAxIGJAxICIAREDIgZEDIgYEDEgYkDEgIgBEQMiBkQMiBgQMSBiQMSAiAERAyIGRAyIGBAxIGJAxICIAREDIgZEDIgYEDEgYkDEgIgBEQMiBkQMiBgQMSBiQMSAGo5h+IM9/d+okGDU8otnx8luNXWM/s9zr6XbXyYYmt/R7mUpHJARhqfL8K9UafcnGplvZS+/91Tjnyi9uogBEQMiBkQMiBgQMSBiQMSAiAERAyIGRAyIGBAxIGJAxICIAREDIgZEDIgYEDEgYkDEgIgBEQMiBkQMiBgQMSBiQMSAiAERAyIGRAyIGNAOI/DZ77yO89xpsT+1fwF11JpI1Qx18wAAAABJRU5ErkJggg==",
             positions: [
                 {
                     name: "Field Service Technician",
@@ -92,7 +92,7 @@ const Experience = () => {
         },  
         {
             name: "Turner Techtronics",
-            companyLogo: "https://media.glassdoor.com/sqll/1270800/turner-techtronics-squarelogo-1501595747521.png",
+            companyLogo: "images/education/TurnerTechtronics.png",
             positions: [
                 {
                     name: "Domain Migration Technician",
@@ -111,7 +111,7 @@ const Experience = () => {
         },  
         {
             name: "Sutherland Global Services",
-            companyLogo: "https://remoteco.s3.amazonaws.com/wp-content/uploads/2015/12/sutherland.jpg",
+            companyLogo: "https://o.remove.bg/downloads/d2ff073f-d590-4c80-934c-4546c6e7451c/images-removebg-preview.png",
             positions: [
                 {
                     name: "Subject Matter Expert",
