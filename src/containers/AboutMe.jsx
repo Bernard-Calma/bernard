@@ -12,6 +12,14 @@ const AboutMe = () => {
             imageLink: "https://img.icons8.com/color/256/redux.png"
         },
         {
+            skill: "React Router",
+            imageLink: "https://o.remove.bg/downloads/e887207c-7600-4048-8208-192d60c6b1bd/1_F1iFV5NTRN9YrAIC2VtFaA-removebg-preview.png"
+        }, 
+        {
+            skill: "React Native",
+            imageLink: "https://o.remove.bg/downloads/452365ba-1a84-4209-bd42-b0e80042df35/react-native-svg-transformer-allows-you-import-svg-aperture-science-innovators-logo-11562851994zqcpwozsvy-removebg-preview.png"
+        },
+        {
             skill: "NodeJS",
             imageLink: "https://img.icons8.com/color/256/nodejs.png",
         },
@@ -20,11 +28,11 @@ const AboutMe = () => {
             imageLink: "https://img.icons8.com/color/256/javascript.png",
         },
         {
-            skill: "Jquery",
+            skill: "jQuery",
             imageLink: "https://img.icons8.com/ios-filled/256/jquery.png"
         },
         {
-            skill: "Phyton",
+            skill: "Python",
             imageLink: "https://img.icons8.com/color/256/python.png",
         },
         {
@@ -44,7 +52,7 @@ const AboutMe = () => {
             imageLink: "https://img.icons8.com/color/256/java-coffee-cup-logo.png",
         },
         {
-            skill: "lua",
+            skill: "Lua",
             imageLink: "https://img.icons8.com/nolan/256/lua-language.png",
         },
         {
@@ -103,10 +111,18 @@ const AboutMe = () => {
             skill: "CSS",
             imageLink: "https://img.icons8.com/color/256/css3.png",
         },
+        {
+            skill: "JSON",
+            imageLink: "https://img.icons8.com/external-soft-fill-juicy-fish/256/external-json-microservices-soft-fill-soft-fill-juicy-fish.png"
+        },
+        {
+            skill: "MySQL",
+            imageLink: "https://img.icons8.com/fluency/256/mysql-logo.png"
+        }
     ])
 
     const [programingLanguages] = useState([
-        "Javascript",
+        "JavaScript",
         "Python",
         "Java",
         "C#",
@@ -115,7 +131,8 @@ const AboutMe = () => {
         "SQL",
         "NoSql",
         "HTML",
-        "CSS"
+        "CSS",
+        'Lua'
     ])
 
     const [libraries] = useState([
@@ -154,9 +171,46 @@ const AboutMe = () => {
                 <div className="aboutMeSkills">
                     <h1 className="skillsHeader">Skills</h1>
                     <ul className="skillsList">
-                        { skillsList.map((skill, index) => 
-                            <li className="skillItem"><img className="skillIcon" src={skill.imageLink} alt={skill.skill} /></li>
-                        )}
+                        <h2>Languages</h2>
+                        <div className="skillsSubList">
+                            { skillsList.map((skill, index) => 
+                                //Return skill list if included in language array
+                                programingLanguages.some(val => val === skill.skill)
+                                ?
+                                <li className="skillItem"><img className="skillIcon" src={skill.imageLink} alt={skill.skill} /></li>
+                                :<></>
+                            )}
+                        </div>
+                        <h2>Frameworks</h2>
+                        <div className="skillsSubList">
+                            { skillsList.map((skill, index) => 
+                                // Return library list if included in language array
+                                frameworks.some(val => val === skill.skill)
+                                ?
+                                <li className="skillItem"><img className="skillIcon" src={skill.imageLink} alt={skill.skill} /></li>
+                                :<></>
+                            )}
+                        </div>
+                        <h2>Libraries</h2>
+                        <div className="skillsSubList">
+                            { skillsList.map((skill, index) => 
+                                // Return library list if included in language array
+                                libraries.some(val => val === skill.skill)
+                                ?
+                                <li className="skillItem"><img className="skillIcon" src={skill.imageLink} alt={skill.skill} /></li>
+                                :<></>
+                            )}
+                        </div>
+                        <h2>Databases</h2>
+                        <div className="skillsSubList">
+                            { skillsList.map((skill, index) => 
+                                // Return library list if included in language array
+                                databases.some(val => val === skill.skill)
+                                ?
+                                <li className="skillItem"><img className="skillIcon" src={skill.imageLink} alt={skill.skill} /></li>
+                                :<></>
+                            )}
+                        </div>
                     </ul>
                 </div>
         </section>
