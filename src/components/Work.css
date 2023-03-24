@@ -24,3 +24,17 @@
 .position {
     font-weight: bold;
 }
+
+
+
+@media screen and (max-width: 1200px) {
+    .divWork, .workInfo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .companyLogo {
+        margin: auto;
+    }
+}

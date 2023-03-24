@@ -18,6 +18,13 @@ const Projects = () => {
             screenshot: "images/projects/Spentrace.png"
         },
         {
+            name: "NexChapter",
+            websiteLink: "https://https://nexchapters.herokuapp.com/",
+            summary: "Floating Shoe is a game where you as a player will be a flying shoe and you need to avoid those feet that are trying to get into you as you move forward.",
+            skills: ["React", "Redux", "Python", "Django", "Javascript", "HTML", "CSS"],
+            screenshot: "images/projects/FloatingShoe.png"
+        }, 
+        {
             name: "Floating Shoe",
             websiteLink: "https://bernard-calma.github.io/project-1/",
             summary: "Floating Shoe is a game where you as a player will be a flying shoe and you need to avoid those feet that are trying to get into you as you move forward.",
