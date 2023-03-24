@@ -22,7 +22,7 @@ const Projects = () => {
             websiteLink: "https://https://nexchapters.herokuapp.com/",
             summary: "Floating Shoe is a game where you as a player will be a flying shoe and you need to avoid those feet that are trying to get into you as you move forward.",
             skills: ["React", "Redux", "Python", "Django", "Javascript", "HTML", "CSS"],
-            screenshot: "images/projects/FloatingShoe.png"
+            screenshot: "images/projects/NexChapters.png"
         }, 
         {
             name: "Floating Shoe",
@@ -43,9 +43,9 @@ const Projects = () => {
     let [show, setShow] = useState(0)
 
     const nextProject = (index) => {
-        if(index === 0){
-            setShow(projects.length-1)
-        } else setShow(show -= 1)
+        if(index === projects.length){
+            setShow(0)
+        } else setShow(show += 1)
     }
 
     const previousProject = (index) => {

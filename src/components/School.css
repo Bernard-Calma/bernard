@@ -22,7 +22,7 @@
 }
 
 .projectImage {
-    width: 1000px;
+    width: 90%;
 }
 
 .projectSummary {
@@ -33,6 +33,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skillItem {
@@ -52,8 +53,14 @@
 
 
 @media screen and (max-width: 1200px) {
+
+    .divSchool {
+        overflow: hidden;
+    }
     .schoolLogo{
         float: none;
+        margin: 0;
+        width: 400px;
     }
     .schoolInfo {
         text-align: center;
@@ -62,6 +69,6 @@
 
     /* PROJECT DIV */
     .projectImage {
-        width: 450px;
+        width: 100%;
     }
 }
