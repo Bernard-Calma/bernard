@@ -43,7 +43,7 @@ const Projects = () => {
     let [show, setShow] = useState(0)
 
     const nextProject = (index) => {
-        if(index === projects.length){
+        if(index === projects.length - 1){
             setShow(0)
         } else setShow(show += 1)
     }
