@@ -4,36 +4,52 @@ import "./AboutMe.css"
 const AboutMe = () => {
     const [skillsList] = useState([
         {
-            skill: "HTML",
-            imageLink: "https://img.icons8.com/color/256/html-5.png",
+            skill: "React",
+            imageLink: "https://img.icons8.com/color/256/react-native.png",
         },
         {
-            skill: "CSS",
-            imageLink: "https://img.icons8.com/color/256/css3.png",
+            skill: "Redux",
+            imageLink: "https://img.icons8.com/color/256/redux.png"
+        },
+        {
+            skill: "NodeJS",
+            imageLink: "https://img.icons8.com/color/256/nodejs.png",
         },
         {
             skill: "JavaScript",
             imageLink: "https://img.icons8.com/color/256/javascript.png",
         },
         {
-            skill: "C++",
-            imageLink: "https://img.icons8.com/color/256/c-plus-plus-logo.png",
-        },
-        {
-            skill: "Java",
-            imageLink: "https://img.icons8.com/color/256/java-coffee-cup-logo.png",
+            skill: "Jquery",
+            imageLink: "https://img.icons8.com/ios-filled/256/jquery.png"
         },
         {
             skill: "Phyton",
             imageLink: "https://img.icons8.com/color/256/python.png",
         },
         {
-            skill: "React",
-            imageLink: "https://img.icons8.com/color/256/react-native.png",
+            skill: "Github",
+            imageLink: "https://img.icons8.com/color/256/github.png",
+        },
+        {
+            skill: "Flask",
+            imageLink: "https://img.icons8.com/color/256/flask.png",
+        },
+        {
+            skill: "Django",
+            imageLink: "https://img.icons8.com/ios/256/django.png",
+        },
+        {
+            skill: "Java",
+            imageLink: "https://img.icons8.com/color/256/java-coffee-cup-logo.png",
         },
         {
             skill: "lua",
             imageLink: "https://img.icons8.com/nolan/256/lua-language.png",
+        },
+        {
+            skill: "SQL",
+            imageLink: "https://img.icons8.com/external-soft-fill-juicy-fish/256/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png"
         },
         {
             skill: "PostgreSQL",
@@ -44,20 +60,12 @@ const AboutMe = () => {
             imageLink: "https://img.icons8.com/color/256/mongodb.png",
         },
         {
-            skill: "Flask",
-            imageLink: "https://img.icons8.com/color/256/flask.png",
-        },
-        {
-            skill: "NodeJS",
-            imageLink: "https://img.icons8.com/color/256/nodejs.png",
+            skill: "Access",
+            imageLink: "https://img.icons8.com/color/256/microsoft-access-2019.png"
         },
         {
             skill: "ExpresJS",
             imageLink: "https://img.icons8.com/color/256/express-js.png",
-        },
-        {
-            skill: "Github",
-            imageLink: "https://img.icons8.com/color/256/github.png",
         },
         {
             skill: "Bootstrap",
@@ -69,12 +77,69 @@ const AboutMe = () => {
         },
         {
             skill: "Fusion360",
-            imageLink: "https://play-lh.googleusercontent.com/WVl18ugl3adNd8rjRQUJwnmt5VeiSf-7GSv7Fae8vbKywECFwsYXbD43buTZCmAR11ht",
+            imageLink: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/464bfb9c-9a76-465b-b539-f36ab9f06047/ddhhv4r-ef877702-5764-4670-bb52-eb514ecd60ed.png/v1/fill/w_512,h_512,strp/fusion_360_honeycomb_icon_by_freddiderfred_ddhhv4r-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvNDY0YmZiOWMtOWE3Ni00NjViLWI1MzktZjM2YWI5ZjA2MDQ3XC9kZGhodjRyLWVmODc3NzAyLTU3NjQtNDY3MC1iYjUyLWViNTE0ZWNkNjBlZC5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.5ID_baqEggkjJcu_NIXYHP5bpVtj7J8DJCQ4OYOZVz4",
         },
         {
             skill: "Arduino",
             imageLink: "https://img.icons8.com/color/256/arduino.png",
         },
+        {
+            skill: "C#",
+            imageLink: "https://img.icons8.com/color/256/c-sharp-logo-2.png",
+        },
+        {
+            skill: "C++",
+            imageLink: "https://img.icons8.com/color/256/c-plus-plus-logo.png",
+        },
+        {
+            skill: "Visual Basic",
+            imageLink: "https://upload.wikimedia.org/wikipedia/en/e/e4/Visual_Basic_6.0_logo.png"
+        },
+        {
+            skill: "HTML",
+            imageLink: "https://img.icons8.com/color/256/html-5.png",
+        },
+        {
+            skill: "CSS",
+            imageLink: "https://img.icons8.com/color/256/css3.png",
+        },
+    ])
+
+    const [programingLanguages] = useState([
+        "Javascript",
+        "Python",
+        "Java",
+        "C#",
+        "C++",
+        "Visual Basic",
+        "SQL",
+        "NoSql",
+        "HTML",
+        "CSS"
+    ])
+
+    const [libraries] = useState([
+        "React",
+        "React Router",
+        "JSON",
+        "jQuery"
+    ])
+
+    const [frameworks] = useState([
+        "React Native",
+        "Redux",
+        "Bootstrap",
+        "ExpressJS",
+        "Flask",
+        "Django",
+        "EJS"
+    ])
+
+    const [databases] = useState([
+        'PostgreSQL',
+        'MongoDB',
+        'MySQL',
+        'Access'
     ])
 
 
