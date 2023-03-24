@@ -60,6 +60,10 @@ const AboutMe = () => {
             imageLink: "https://img.icons8.com/external-soft-fill-juicy-fish/256/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png"
         },
         {
+            skill: "NoSQL",
+            imageLink: "https://img.icons8.com/external-outline-black-m-oki-orlando/256/external-nosql-database-outline-outline-black-m-oki-orlando.png"
+        },
+        {
             skill: "PostgreSQL",
             imageLink: "https://img.icons8.com/color/256/postgreesql.png",
         },
@@ -72,7 +76,7 @@ const AboutMe = () => {
             imageLink: "https://img.icons8.com/color/256/microsoft-access-2019.png"
         },
         {
-            skill: "ExpresJS",
+            skill: "ExpressJS",
             imageLink: "https://img.icons8.com/color/256/express-js.png",
         },
         {
@@ -118,6 +122,10 @@ const AboutMe = () => {
         {
             skill: "MySQL",
             imageLink: "https://img.icons8.com/fluency/256/mysql-logo.png"
+        },
+        {
+            skill: "EJS",
+            imageLink: "https://o.remove.bg/downloads/ba059548-210e-46d6-b36a-f607cbce968f/download__1_-removebg-preview.png"
         }
     ])
 
@@ -129,7 +137,7 @@ const AboutMe = () => {
         "C++",
         "Visual Basic",
         "SQL",
-        "NoSql",
+        "NoSQL",
         "HTML",
         "CSS",
         'Lua'
