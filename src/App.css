@@ -26,6 +26,7 @@ p {
   font-family: "Space Mono", sans-serif;
   font-size: 1rem;
   color: rgba(14, 226, 226, 0.795);
+  white-space: pre-line;
 }
 
 section {
