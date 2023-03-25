@@ -6,10 +6,13 @@
     align-items: center;
 }
 
-.aboutMe{
+.aboutMe {
     text-align: center;
     width: 50%;
     position: relative;
+    z-index: -1;
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
 }
 
 /* IMAGE */
@@ -22,6 +25,10 @@
     height: 450px;
     border-radius: 100%;
     padding-top: 50px;
+    position: relative;
+    z-index: -1;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
 }
 
 .aboutMeName {
@@ -76,6 +83,9 @@ span {
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
 }
 
 .skillsSubList {
@@ -113,4 +123,26 @@ span {
         height: 400px;
         padding: 0;
     }
+}
+
+
+/* Animation */
+@keyframes fadeInLeft {
+    0% {left: -100%;}
+    100% {left: 0;}
+}
+
+@keyframes fadeInRight {
+    0% {right: -100%;}
+    100% {right: 0;}
+}
+
+@keyframes fadeInUp {
+    0% {bottom: -100%;}
+    100% {top: 0;}
+}
+
+@keyframes fadeInDown {
+    0% {top: -100%;}
+    100% {bottom: 0;}
 }
