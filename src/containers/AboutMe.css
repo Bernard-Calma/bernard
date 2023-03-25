@@ -10,7 +10,6 @@
     text-align: center;
     width: 50%;
     position: relative;
-    z-index: -1;
     animation-name: fadeInLeft;
     animation-duration: 1s;
 }
@@ -107,6 +106,7 @@ span {
         display: flex;
         flex-direction: column;
         padding: 20px 10px 0;
+        height: auto;
     }
 
     .introduction {
@@ -114,14 +114,21 @@ span {
     }
 
     .aboutMe {
-        margin: 40px auto 10px;
+        margin: 40px auto 50px;
+        width: 90%;
+        height: auto;
+    }
+
+    .containerPersonalImage{
+        width: 100%;
+        height: 400pxs;
     }
 
     .personalImage {
-        margin: 0 auto 10px;
         width: 400px;
         height: 400px;
         padding: 0;
+        margin-left: -5%;
     }
 }
 
