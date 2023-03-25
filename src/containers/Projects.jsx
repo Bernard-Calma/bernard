@@ -47,16 +47,14 @@ const Projects = () => {
 
     const nextProject = () => {
         if(show === projects.length - 1){
-            setShow(0)
-            setSlideDirection("slideRight")
+            setShow(0)     
         } else setShow(show += 1)
         
     }
 
     const previousProject = () => {
         if(show === 0){
-            setShow(projects.length-1)
-            setSlideDirection("slideLeft")
+            setShow(projects.length-1)  
         } else setShow(show -= 1)
     }
 
@@ -75,7 +73,6 @@ const Projects = () => {
                             index={index}
                             project={project}
                             show = {show}
-                            slideDirection = {slideDirection}
                             nextProject = {() => nextProject(index)}
                             previousProject = {() => previousProject(index)}
                         />
