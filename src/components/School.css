@@ -36,10 +36,6 @@
     flex-wrap: wrap;
 }
 
-.skillItem {
-    margin: 0 3%;
-}
-
 .hidden {
     display: none;
 }

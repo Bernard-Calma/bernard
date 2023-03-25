@@ -1,19 +1,14 @@
 #idAboutMe {
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    height: 100%;
 }
 
 .aboutMe{
     text-align: center;
     margin: auto;
-    grid-column: span 1;
 }
 
-.aboutMeSkills {
-    grid-column: span 2;
-}
 .aboutMeName {
     margin-bottom: 0;
 }
@@ -54,18 +49,24 @@ span {
     padding-top: 50px;
 }
 
-/* Skills Sublist */
+/* Skills */
+.aboutMeSkills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .skillsSubList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
+    margin: 20px 0;
     width: auto;
 }
 
 .skillItem {
-    margin: 0 10px;
+    margin: 0 10px !important;
 }
 
 @media screen and (max-width: 1100px) {
