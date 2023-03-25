@@ -166,7 +166,7 @@ const Skills = () => {
         'Access'
     ])
     return(
-        <section className="aboutMeSkills">
+        <section className="aboutMeSkills reveal">
             <h1 className="skillsHeader">Skills</h1>
             <ul className="skillsList">
                 <h2>Languages</h2>

@@ -8,6 +8,7 @@ header {
     justify-content: space-between;
     padding: 0 2%;
     background-color: rgb(124, 174, 189);
+    z-index: 1;
 }
 
 .personalLogo {
