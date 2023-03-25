@@ -13,14 +13,14 @@ const App = () => {
   useEffect(()=>{
     window.addEventListener('scroll', () => {
       var reveals = document.querySelectorAll(".reveal");
-
+      // console.log(reveals[3].offsetHeight)
       for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
         var elementVisible = 150;
-        var elementHide = elementTop + 2000;
+        var elementHide = reveals[i].offsetHeight + 150;
 
-        if (elementTop < windowHeight - elementVisible && elementTop + 500 > windowHeight - elementHide) {
+        if (elementTop < windowHeight - elementVisible && elementTop > windowHeight - elementHide) {
           reveals[i].classList.add("active");
         } else {
           reveals[i].classList.remove("active");
