@@ -1,47 +1,43 @@
 header {
     position: fixed;
     top: 0;
-    width: 96%;
+    width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 2%;
     background-color: rgb(124, 174, 189);
     z-index: 1;
+    overflow: hidden;
 }
 
 .personalLogo {
     width: 60px;
     height: 50px;
-    margin: auto 0;
+    margin: auto 20px;
 }
 
 
 /* NAVBAR */
 .sectioNavBar {
-    display: flex;
-    align-items: center;
     font-family: 'Ubuntu', sans-serif;
     z-index: 99;
-    width: 60%;
+    width: 500px;
     margin-right: 10px;
 }
 
 .containerNavBar {
+    width: 500px;
     margin: 0;
-    width: 100%;
+    padding: 0;
     height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .navBarItem {
-    width: 25%;
-    height: 50%;
+    width: 200px;
     font-family: "Russo One", serif;
-    font-size: 22px;
     position: relative;
 }
 
@@ -51,19 +47,23 @@ header {
     position: absolute;
     top: 0;
     margin: 0;
+    
 }
 
 .navBarItem > a:hover {
     color: rgb(175, 230, 240);
     box-shadow: 0px 1px 5px 1px white;
-    font-size: 26px;
 }
 
 
 
 @media screen and (max-width: 1100px) {
+    header {
+        height: 70px;
+    }
+
     .sectioNavBar {
-        width: 170px;
+        width: 120px;
         height: 100%;
     }
 
@@ -73,11 +73,6 @@ header {
         flex-direction: column;
         margin: 0;
         align-items: center;
-    }
-
-    header {
-        width: 97%;
-        height: 100px;
     }
 
     .navBarItem > a {
