@@ -12,11 +12,11 @@ const Skills = () => {
         },
         {
             skill: "React Router",
-            imageLink: "https://o.remove.bg/downloads/e887207c-7600-4048-8208-192d60c6b1bd/1_F1iFV5NTRN9YrAIC2VtFaA-removebg-preview.png"
+            imageLink: "images/skills/reactRouter.png"
         }, 
         {
             skill: "React Native",
-            imageLink: "https://o.remove.bg/downloads/452365ba-1a84-4209-bd42-b0e80042df35/react-native-svg-transformer-allows-you-import-svg-aperture-science-innovators-logo-11562851994zqcpwozsvy-removebg-preview.png"
+            imageLink: "images/skills/reactNative.png"
         },
         {
             skill: "NodeJS",
@@ -124,7 +124,7 @@ const Skills = () => {
         },
         {
             skill: "EJS",
-            imageLink: "https://o.remove.bg/downloads/ba059548-210e-46d6-b36a-f607cbce968f/download__1_-removebg-preview.png"
+            imageLink: "images/skills/ejs.png"
         }
     ])
 
