@@ -166,7 +166,7 @@ const Skills = () => {
         'Access'
     ])
     return(
-        <div className="aboutMeSkills">
+        <section className="aboutMeSkills">
             <h1 className="skillsHeader">Skills</h1>
             <ul className="skillsList">
                 <h2>Languages</h2>
@@ -210,7 +210,7 @@ const Skills = () => {
                     )}
                 </div>
             </ul>
-        </div>
+        </section>
     )
 }
 
