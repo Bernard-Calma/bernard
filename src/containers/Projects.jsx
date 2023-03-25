@@ -60,31 +60,35 @@ const Projects = () => {
         } else setShow(show -= 1)
     }
 
-    return(
+    return(<>
         <section className="sectionProjects reveal" id="idProjects">
             <h1>PROJECTS</h1>
-            <ProjectChange 
-                    direction = "previous"
-                    previousProject = {previousProject}
-            />
-            <ProjectChange 
-                direction = "next"
-                nextProject = {nextProject}
-            />
-            {
-                projects.map((project, index) =>
-                    <Project 
-                        key={index}
-                        index={index}
-                        project={project}
-                        show = {show}
-                        slideDirection = {slideDirection}
-                        nextProject = {() => nextProject(index)}
-                        previousProject = {() => previousProject(index)}
-                    />
-                )
-            }
+            <div>
+                <ProjectChange 
+                        direction = "previous"
+                        previousProject = {previousProject}
+                />
+                {
+                    projects.map((project, index) =>
+                        <Project 
+                            key={index}
+                            index={index}
+                            project={project}
+                            show = {show}
+                            slideDirection = {slideDirection}
+                            nextProject = {() => nextProject(index)}
+                            previousProject = {() => previousProject(index)}
+                        />
+                    )
+                }
+                <ProjectChange 
+                    direction = "next"
+                    nextProject = {nextProject}
+                />
+            </div>
         </section>
+    </>
+        
     )
 }
 

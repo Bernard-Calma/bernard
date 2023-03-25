@@ -1,8 +1,21 @@
 
 .buttonPrevious, .buttonNext {
     width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
     filter: brightness(0.8) invert(.8) sepia(.4) hue-rotate(100deg) saturate(200%);
 }
+
+.buttonPrevious {
+    left: 0;
+}
+
+.buttonNext {
+    right: 0;
+}
+
 .buttonPrevious:hover, .buttonNext:hover {
     cursor: pointer;
 }
