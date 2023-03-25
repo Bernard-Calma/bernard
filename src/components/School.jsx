@@ -1,5 +1,6 @@
 import Project from "./SchoolProject"
 import "./School.css"
+import SchoolProject from "./SchoolProject"
 
 const School = (props) => {
     return(
@@ -11,7 +12,7 @@ const School = (props) => {
                 <p className = "yearGraduated">{props.school.yearGraduate}</p>
                 <p className = "courseDescription">{props.school.description}</p>
                 { props.school.projects.map((project, index) => 
-                    <Project 
+                    <SchoolProject 
                         key={index}
                         project={project}
                     />

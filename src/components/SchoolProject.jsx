@@ -1,9 +1,9 @@
-const Project = (props) => {
+const SchoolProject = (props) => {
     return(
-        <div className="divProject">
-            <p className="project">{props.project}</p>
+        <div className="divSchoolProject">
+            <p className="schoolProject">{props.project}</p>
         </div>
     )
 }
 
-export default Project
+export default SchoolProject
