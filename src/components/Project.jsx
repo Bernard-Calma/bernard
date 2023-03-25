@@ -1,21 +1,9 @@
-import ProjectChange from "../buttons/ProjectChange";
-
 const Project = (props) => {
     return(
-        <div className={`divProject ${props.index === props.show ? "" : "hidden"}`}>
-            <h2 className="projectTitle">{props.project.name}</h2>
+        <div className={`divProject ${props.index === props.show ? `active `: `hidden ${props.slideDirection}`}`}>
+            <h2 className={`projectTitle`}>{props.project.name}</h2>
             <div className="containerImage">
-                <ProjectChange 
-                    direction = "previous"
-                    index = {props.index}
-                    previousProject = {props.previousProject}
-                />
-                <img className="projectImage" src={props.project.screenshot} alt={props.project.name}/>
-                <ProjectChange 
-                    direction = "next"
-                    index = {props.index}
-                    nextProject = {props.nextProject}
-                />
+                <a href={props.project.websiteLink} target={'_blank'} rel={'noreferrer'}><img className="projectImage" src={props.project.screenshot} alt={props.project.name}/></a>
             </div>
             <p className="projectSummary">{props.project.summary}</p>
             <ul className="skillList">

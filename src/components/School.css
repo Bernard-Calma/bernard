@@ -16,37 +16,9 @@
     font-weight: bold;
 }
 
-/* PROJECT DIV */
 .project{
     font-weight: bold;
 }
-
-.projectImage {
-    width: 90%;
-}
-
-.projectSummary {
-    padding: 0 10%;
-}
-
-.skillList {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.hidden {
-    display: none;
-}
-
-.containerImage {
-    display: flex;
-    justify-content: center;
-}
-
-
-
 
 @media screen and (max-width: 1200px) {
 

@@ -1,0 +1,47 @@
+/* PROJECT */
+.sectionProjects {
+    height: 900px;
+}
+
+/* INDIVIDUAL PROJECT */
+.divProject {
+    position: absolute;
+}
+
+.projectImage {
+    width: 90%;
+}
+
+.projectImage:hover {
+    cursor: pointer;
+}
+
+.projectSummary {
+    padding: 0 10%;
+}
+
+.skillList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    opacity: 0;
+}
+.active {
+    opacity: 1;
+}
+
+/* Animation/Transition */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

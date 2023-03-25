@@ -2,7 +2,7 @@ import "./ProjectChange.css"
 
 const ProjectChange = (props) => {
     return (
-        <div className="divProjectChange" >
+        <>
             { props.direction === "previous" ?
                 <img 
                 src="/images/buttonPrevious.png" 
@@ -19,7 +19,7 @@ const ProjectChange = (props) => {
                 />
             }
             
-        </div>
+        </>
     )
 }
 

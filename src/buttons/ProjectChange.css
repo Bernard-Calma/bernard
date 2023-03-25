@@ -1,14 +1,13 @@
-.divProjectChange {
-    align-self: center;
-    margin: 10px;
-}
 
 .buttonPrevious, .buttonNext {
+    width: 50px;
     filter: brightness(0.8) invert(.8) sepia(.4) hue-rotate(100deg) saturate(200%);
 }
+.buttonPrevious:hover, .buttonNext:hover {
+    cursor: pointer;
+}
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     .divProjectChange {
         position: absolute;
     }

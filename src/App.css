@@ -36,6 +36,7 @@ section {
   padding: 60px 20px 0px;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -131,18 +132,4 @@ footer > p {
 
 @keyframes navigate {
   
-}
-
-
-/* Animate on scroll to fade up */
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
 }

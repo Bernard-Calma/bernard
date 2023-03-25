@@ -1,5 +1,7 @@
 import { useState } from "react"
+import ProjectChange from "../buttons/ProjectChange"
 import Project from "../components/Project"
+import './Projects.css'
 
 const Projects = () => {
     const [projects] = useState(
@@ -20,7 +22,7 @@ const Projects = () => {
         {
             name: "NexChapter",
             websiteLink: "https://https://nexchapters.herokuapp.com/",
-            summary: "Floating Shoe is a game where you as a player will be a flying shoe and you need to avoid those feet that are trying to get into you as you move forward.",
+            summary: "An app that helps you track of your reading list",
             skills: ["React", "Redux", "Python", "Django", "Javascript", "HTML", "CSS"],
             screenshot: "images/projects/NexChapters.png"
         }, 
@@ -41,22 +43,34 @@ const Projects = () => {
     )
 
     let [show, setShow] = useState(0)
+    let [slideDirection, setSlideDirection] = useState("")
 
-    const nextProject = (index) => {
-        if(index === projects.length - 1){
+    const nextProject = () => {
+        if(show === projects.length - 1){
             setShow(0)
+            setSlideDirection("slideRight")
         } else setShow(show += 1)
+        
     }
 
-    const previousProject = (index) => {
-        if(index === 0){
+    const previousProject = () => {
+        if(show === 0){
             setShow(projects.length-1)
+            setSlideDirection("slideLeft")
         } else setShow(show -= 1)
     }
 
     return(
         <section className="sectionProjects reveal" id="idProjects">
             <h1>PROJECTS</h1>
+            <ProjectChange 
+                    direction = "previous"
+                    previousProject = {previousProject}
+            />
+            <ProjectChange 
+                direction = "next"
+                nextProject = {nextProject}
+            />
             {
                 projects.map((project, index) =>
                     <Project 
@@ -64,6 +78,7 @@ const Projects = () => {
                         index={index}
                         project={project}
                         show = {show}
+                        slideDirection = {slideDirection}
                         nextProject = {() => nextProject(index)}
                         previousProject = {() => previousProject(index)}
                     />
