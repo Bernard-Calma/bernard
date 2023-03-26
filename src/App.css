@@ -7,6 +7,22 @@ html {
   color: rgba(14, 226, 226, 0.795);
 }
 
+.scrollBar {
+  position: fixed;
+  right: 0;
+  top: 25%;
+  writing-mode: vertical-rl;
+  text-orientation: upright
+}
+
+.scrollBar:hover {
+  cursor: pointer;
+}
+
+.hideScrollBar::-webkit-scrollbar{
+  display: none;
+}
+
 /* TAG STYLES */
 h1 {
   font-family: "Russo One", serif;
@@ -31,7 +47,6 @@ p {
 
 section {
   max-width: 1500px;
-  margin: 0 auto;
   text-align: center;
   padding: 60px 20px 0px;
 }
@@ -100,12 +115,6 @@ footer > p {
   font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -140,4 +149,12 @@ footer > p {
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+
+/* Mobile Screen */
+@media only screen and (max-width: 1100px){
+  .scrollBar {
+    display: none;
+  }
 }

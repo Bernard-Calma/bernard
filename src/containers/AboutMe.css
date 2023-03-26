@@ -7,16 +7,21 @@
 }
 
 .aboutMe {
-    text-align: center;
+    text-align: start;
     width: 50%;
     position: relative;
     animation-name: fadeInLeft;
     animation-duration: 1s;
+    /* border-top: solid white;
+    border-bottom : solid white; */
+    border-radius: 100px;
+    padding-bottom: 30px;
 }
 
 /* IMAGE */
 .containerPersonalImage {
     width: 50%;
+    display: none;
 }
 
 .personalImage {
@@ -114,9 +119,14 @@ span {
     }
 
     .aboutMe {
-        margin: 40px auto 50px;
-        width: 90%;
+        margin: 60px 0 50px;
+        padding: 40px 0;
+        width: 100%;
         height: auto;
+    }
+
+    .aboutMeName {
+        margin: 0;
     }
 
     .containerPersonalImage{

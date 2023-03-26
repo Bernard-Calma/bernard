@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import AboutMe from './containers/AboutMe';
@@ -9,6 +9,15 @@ import Projects from './containers/Projects';
 import Skills from './containers/Skills';
 
 const App = () => {
+  const [scrollBarView, setScrollBarView] = useState(false)
+  const toggleScrollBar = () => {
+    if (scrollBarView) {
+      document.body.classList.add("hideScrollBar")
+    } else {
+      document.body.classList.remove("hideScrollBar")
+    }
+    setScrollBarView(!scrollBarView)
+  }
 
   useEffect(()=>{
     window.addEventListener('scroll', () => {
@@ -30,6 +39,7 @@ const App = () => {
   }, [])
   return (
     <div className='App'>
+      <p className='scrollBar' onClick={toggleScrollBar}>Scroll Bar</p>
       <Header />
       <AboutMe />
       <Skills />
