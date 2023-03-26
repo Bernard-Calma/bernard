@@ -3,13 +3,14 @@
 html {
   /* for smooth scrolling when clicking on navbar */
   scroll-behavior: smooth;
-  background-color: rgb(4, 61, 126);
+  background-color: #3b475e;
   color: rgba(14, 226, 226, 0.795);
 }
 
 .scrollBar {
   position: fixed;
-  right: 0;
+  margin: 0;
+  right: 20px;
   top: 30%;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -46,10 +47,11 @@ p {
   white-space: pre-line;
 }
 
+
 section {
-  max-width: 1500px;
   text-align: center;
-  padding: 60px 20px 0px;
+  padding: 60px 0 0px 20px;
+  margin-right: 70px;
 }
 
 

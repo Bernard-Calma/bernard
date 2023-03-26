@@ -40,11 +40,11 @@ const Skills = () => {
         },
         {
             skill: "Flask",
-            imageLink: "https://img.icons8.com/color/256/flask.png",
+            imageLink: "images/skills/flask.png",
         },
         {
             skill: "Django",
-            imageLink: "https://img.icons8.com/ios/256/django.png",
+            imageLink: "images/skills/django.png",
         },
         {
             skill: "Java",
@@ -60,7 +60,7 @@ const Skills = () => {
         },
         {
             skill: "NoSQL",
-            imageLink: "https://img.icons8.com/external-outline-black-m-oki-orlando/256/external-nosql-database-outline-outline-black-m-oki-orlando.png"
+            imageLink: "images/skills/nosql.png"
         },
         {
             skill: "PostgreSQL",
@@ -76,7 +76,7 @@ const Skills = () => {
         },
         {
             skill: "ExpressJS",
-            imageLink: "https://img.icons8.com/color/256/express-js.png",
+            imageLink: "images/skills/express.png",
         },
         {
             skill: "Bootstrap",
@@ -116,11 +116,11 @@ const Skills = () => {
         },
         {
             skill: "JSON",
-            imageLink: "https://img.icons8.com/external-soft-fill-juicy-fish/256/external-json-microservices-soft-fill-soft-fill-juicy-fish.png"
+            imageLink: "images/skills/json.png"
         },
         {
             skill: "MySQL",
-            imageLink: "https://img.icons8.com/fluency/256/mysql-logo.png"
+            imageLink: "images/skills/mysql.png"
         },
         {
             skill: "EJS",
@@ -166,7 +166,7 @@ const Skills = () => {
         'Access'
     ])
     return(
-        <section className="aboutMeSkills reveal">
+        <div className="aboutMeSkills">
             <h1 className="skillsHeader">Skills</h1>
             <ul className="skillsList">
                 <h2>Languages</h2>
@@ -210,7 +210,7 @@ const Skills = () => {
                     )}
                 </div>
             </ul>
-        </section>
+        </div>
     )
 }
 

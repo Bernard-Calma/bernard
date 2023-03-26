@@ -6,10 +6,10 @@ import Contact from './containers/Contact';
 import Experience from './containers/Experience';
 import Header from './containers/Header';
 import Projects from './containers/Projects';
-import Skills from './containers/Skills';
 
 const App = () => {
   useEffect(()=>{
+    document.body.classList.add("hideScrollBar")
     window.addEventListener('scroll', () => {
       var reveals = document.querySelectorAll(".reveal");
       // console.log(reveals[3].offsetHeight)
