@@ -31,10 +31,13 @@
     .divWork, .workInfo{
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
+        padding: 0;
     }
 
     .companyLogo {
-        margin: auto;
+        width: 100px;
+        height: 100px;
+        padding: 0;
     }
 }

@@ -120,7 +120,7 @@ const Experience = () => {
         },  
         {
             name: "Sutherland Global Services",
-            companyLogo: "https://o.remove.bg/downloads/d2ff073f-d590-4c80-934c-4546c6e7451c/images-removebg-preview.png",
+            companyLogo: "images/education/Sutherland.png",
             positions: [
                 {
                     name: "Subject Matter Expert",
