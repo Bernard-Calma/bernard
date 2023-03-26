@@ -21,7 +21,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-
     .divSchool {
         overflow: hidden;
     }
@@ -33,10 +32,5 @@
     .schoolInfo {
         text-align: center;
         padding: 0 10%;
-    }
-
-    /* PROJECT DIV */
-    .projectImage {
-        width: 100%;
     }
 }

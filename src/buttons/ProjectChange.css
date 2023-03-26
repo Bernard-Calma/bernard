@@ -21,17 +21,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .divProjectChange {
-        position: absolute;
-    }
-
-    .buttonPrevious {
-        display: none;
-    }
-
-    .buttonNext {
-        width: 600px;
-        height: 250px;
-        opacity: 0%;
+    .buttonPrevious, .buttonNext {
+        top: 100px;
     }
 }

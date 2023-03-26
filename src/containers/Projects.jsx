@@ -21,7 +21,7 @@ const Projects = () => {
         },
         {
             name: "NexChapter",
-            websiteLink: "https://https://nexchapters.herokuapp.com/",
+            websiteLink: "https://nexchapters.herokuapp.com/",
             summary: "An app that helps you track of your reading list",
             skills: ["React", "Redux", "Python", "Django", "Javascript", "HTML", "CSS"],
             screenshot: "images/projects/NexChapters.png"
@@ -43,7 +43,6 @@ const Projects = () => {
     )
 
     let [show, setShow] = useState(0)
-    let [slideDirection, setSlideDirection] = useState("")
 
     const nextProject = () => {
         if(show === projects.length - 1){

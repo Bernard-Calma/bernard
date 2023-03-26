@@ -1,4 +1,3 @@
-import Project from "./SchoolProject"
 import "./School.css"
 import SchoolProject from "./SchoolProject"
 
