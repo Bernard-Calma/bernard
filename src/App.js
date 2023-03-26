@@ -16,7 +16,7 @@ const App = () => {
       for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+        var elementVisible = 50;
         var elementHide = reveals[i].offsetHeight + 150;
 
         if (elementTop < windowHeight - elementVisible && elementTop > windowHeight - elementHide) {

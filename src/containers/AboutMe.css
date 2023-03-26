@@ -17,25 +17,34 @@
     /* border-top: solid white;
     border-bottom : solid white; */
     border-radius: 100px;
-    padding-left: 200px;
+    margin-left: 50px;
+    padding: 0 0 0 30px;
+    /* border-bottom: solid 5px rgb(167, 161, 161); */
+    box-shadow: 0 0 5px 5px rgba(92, 110, 110, 0.582);
+}
+
+.aboutMe:hover{
+    box-shadow: 0 0 5px 5px r;
 }
 
 .introduction {
     position: absolute;
+
 }
 
 #fileResume {
     position: absolute;
-    width: 100%;
-    bottom: 0;
+    width: 200px;
+    bottom: 30px;
     left: auto;
     font-family: "Space Mono";
-    font-size: larger;
+    font-size: 18px;
     color: rgba(14, 226, 226, 0.795);
 }
 
 #fileResume:hover{
-    font-size: 25px;
+    width: 250px;
+    font-size: 24px;
     color: white;
 }
 

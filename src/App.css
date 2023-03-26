@@ -50,7 +50,7 @@ p {
 
 section {
   text-align: center;
-  padding: 60px 0 0px 20px;
+  padding: 100px 0 0px 20px;
   margin-right: 70px;
 }
 
@@ -61,6 +61,11 @@ section {
 }
 
 /* CONTACT */
+#idContact {
+  margin-top: 100px;
+  padding: 100px;
+}
+
 li {
   list-style: none;
 }
