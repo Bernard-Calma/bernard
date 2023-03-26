@@ -1,6 +1,8 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
+import emailjs from '@emailjs/browser'
 
 const SendEmail = () => {
+    const form = useRef()
     const [emailContent, setEmailContent] = useState({
         senderName: "",
         senderEmail: "",
@@ -14,6 +16,8 @@ const SendEmail = () => {
 
     const handleSendEmail = (e) => {
         e.preventDefault();
+        emailjs.sendForm('service_72qxcai','template_4pfa7ci',form.current,'8pCzt_Ck1JFlrLO8q')
+        .then(result => console.log(result.text), error => console.log(error.text))
         setEmailContent({
             senderName: "",
             senderEmail: "",
@@ -22,7 +26,7 @@ const SendEmail = () => {
         })
     }
     return (
-        <form className="formContactMe" onSubmit={handleSendEmail}>
+        <form className="formContactMe" onSubmit={handleSendEmail} ref={form}>
             <label htmlFor="senderName">Your Name: 
                 <input type="text" name="senderName" id="senderName" value={emailContent.senderName} onChange = {handleChange}/>
             </label>
