@@ -68,7 +68,7 @@
 }
 
 .skillIcon {
-    width: 100px;
+    width: 60px;
 }
 
 .skillsHeader {
@@ -88,7 +88,7 @@ span {
     flex-direction: column;
     text-align: center;
     position: relative;
-    animation-name: fadeInLeft;
+    animation-name: fadeInRight;
     animation-duration: 2s;
 }
 
@@ -97,7 +97,6 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 0;
     width: auto;
 }
 
