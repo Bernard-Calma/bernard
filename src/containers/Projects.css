@@ -7,10 +7,30 @@
 }
 
 .containerProject{
+    position: relative;
     margin: 10px;
     padding: 20px;
     border: solid rgb(2, 139, 252);
     border-radius: 20px;
     box-shadow: 0 0 5px 1px rgb(2, 152, 252);
     background-color: rgb(3, 68, 121);
+}
+
+/* Project Details */
+.projectDetails {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    margin: 20px;
+    padding: 20px;
+    width: 90vh;
+    height: 70vh;
+    background-color: black;
+    border: solid white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.projectImageLarge {
+    width: 80%;
 }
