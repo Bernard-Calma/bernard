@@ -9,6 +9,7 @@ const SendEmail = () => {
         senderSubject: "",
         senderMessage: "",
     })
+    const [message, setMessage] = useState("")
 
     const handleChange = (e) => {
         setEmailContent({...emailContent, [e.target.name]: e.target.value})
@@ -17,7 +18,7 @@ const SendEmail = () => {
     const handleSendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_72qxcai','template_4pfa7ci',form.current,'8pCzt_Ck1JFlrLO8q')
-        .then(result => console.log(result.text), error => console.log(error.text))
+        .then(result => setMessage("Message sent succesfully, Thank you!"), error => setMessage(error.text))
         setEmailContent({
             senderName: "",
             senderEmail: "",
@@ -38,6 +39,7 @@ const SendEmail = () => {
             </label>
             <label className="senderMessage">Your Message: </label>
             <textarea placeholder="Enter your message here" name="senderMessage" id="senderMessage" value={emailContent.senderMessage} onChange = {handleChange}></textarea>
+            <p className="message">{message}</p>
             <input type="submit" name="submitMessage" id="submitMessage" value="Send" />
         </form>
     )
