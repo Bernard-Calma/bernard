@@ -41,6 +41,10 @@
     overflow: hidden;
 }
 
+.projectLinkIcon {
+    font-size: 40px;
+}
+
 .projectImageLarge {
     flex: 1;
     width: 60%;
