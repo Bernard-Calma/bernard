@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    top: 15%;
+    top: 10%;
     left: 5px;
     padding: 20px;
     margin-left: 10px;
@@ -67,4 +67,27 @@
 .skillList {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 900px) {
+    .containerProjects{
+        height: 1500px;
+        position: unset;
+    }
+    .projectDetails{
+        height: 600px;
+        position: fixed;
+    }
+    .projectImageLarge {
+        flex: 1;
+        height: 25%;
+    }
+    
+}
+
+@media screen and (min-height:1100px) {
+    .projectImageLarge {
+        flex: 0;
+    }
 }
