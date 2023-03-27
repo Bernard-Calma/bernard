@@ -60,11 +60,11 @@ const Projects = () => {
     return(<>
         <section className="sectionProjects reveal" id="idProjects">
             <h1>PROJECTS</h1>
-            <div>
-                <ProjectChange 
+            <div className="containerProjects">
+                {/* <ProjectChange 
                         direction = "previous"
                         previousProject = {previousProject}
-                />
+                /> */}
                 {
                     projects.map((project, index) =>
                         <Project 
@@ -77,10 +77,10 @@ const Projects = () => {
                         />
                     )
                 }
-                <ProjectChange 
+                {/* <ProjectChange 
                     direction = "next"
                     nextProject = {nextProject}
-                />
+                /> */}
             </div>
         </section>
     </>
