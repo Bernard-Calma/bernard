@@ -51,7 +51,6 @@ p {
 section {
   text-align: center;
   padding: 100px 0 0px 20px;
-  margin-right: 70px;
 }
 
 
@@ -165,5 +164,9 @@ footer > p {
 @media only screen and (max-width: 1100px){
   .scrollBar {
     display: none;
+  }
+
+  section {
+    padding-left: 0;
   }
 }
