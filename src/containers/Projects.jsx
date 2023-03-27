@@ -54,6 +54,11 @@ const Projects = () => {
 
     let [show, setShow] = useState(0)
 
+    const showProject = (event) => {
+        console.log(event.target.parentNode.lastChild)
+        event.target.parentNode.lastChild.classList.remove('back')
+        event.target.parentNode.lastChild.classList.add('front')
+    }
     return(<>
         <section className="sectionProjects reveal" id="idProjects">
             <h1>PROJECTS</h1>
@@ -66,6 +71,7 @@ const Projects = () => {
                             project={project}
                             show = {show}
                             setShow = {setShow}
+                            showProject = {showProject}
                         />
                     )
                 }
