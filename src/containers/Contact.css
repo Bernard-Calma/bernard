@@ -1,11 +1,16 @@
-/* CONTACT */
-#idContact {
-    margin-top: 100px;
-  }
+/* CONTACT */  
   
-  li {
+#idContact {
+    padding: 0;
+}
+
+#idContact > h1 {
+    margin: 0;
+}
+
+li {
     list-style: none;
-  }
+}
   
   i {
     font-size: 100px;
@@ -26,8 +31,8 @@
   /* Send Email */
   .formContactMe {
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 400px;
     padding: 1% 10%;
     flex-direction: column;
     margin: 20px auto;
@@ -38,9 +43,15 @@
   }
   
   .formContactMe > label {
+    width: 50%;
     display: flex;
     justify-content: space-between;
-    margin: 1% 0;
+    margin: 1% auto;
+    font-family: 'roboto';
+  }
+
+  #lblSenderMessage {
+    margin: 0;
   }
 
   input {
@@ -48,10 +59,16 @@
   }
   
   input[type=submit] {
-    width: 100px;
+    width: 200px;
     align-self: end;
-    margin: 5px 0 0;
+    margin: 5px auto 0;
     font-family: "Space Mono", sans-serif;
+    background-color: rgb(6, 194, 219);
+    color: rgb(23, 83, 107);
+  }
+
+  input[type=submit]:active {
+    transform: translateY(5px);
   }
 
   textarea {

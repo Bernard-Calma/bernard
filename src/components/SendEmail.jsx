@@ -33,15 +33,15 @@ const SendEmail = () => {
                 <input type="text" name="senderName" id="senderName" value={emailContent.senderName} onChange = {handleChange} required/>
             </label>
             <label htmlFor="senderEmail">Your Email: 
-                <input type="text" name="senderEmail" id="senderEmail" value={emailContent.senderEmail} onChange = {handleChange} required/>
+                <input type="email" name="senderEmail" id="senderEmail" value={emailContent.senderEmail} onChange = {handleChange} required/>
             </label>
             <label htmlFor="senderSubject">Subject: 
                 <input type="text" name="senderSubject" id="senderSubject" value={emailContent.senderSubject} onChange = {handleChange}required/>
             </label>
-            <label className="senderMessage">Your Message: </label>
+            <label id="lblSenderMessage">Your Message: </label>
             <textarea placeholder="Enter your message here" name="senderMessage" id="senderMessage" value={emailContent.senderMessage} onChange = {handleChange} required></textarea>
             <p className="message">{message}</p>
-            <input type="submit" name="submitMessage" id="submitMessage" value="Send" />
+            <input type="submit" name="submitMessage" id="submitMessage" value="Send Email" />
         </form>
     )
 }
