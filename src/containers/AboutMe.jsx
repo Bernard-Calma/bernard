@@ -25,8 +25,8 @@ const AboutMe = () => {
 
     return (
         <section className="sectionAboutMe fadeInLeft" id="idAboutMe">
-                <p className='scrollBar' onClick={toggleScrollBar}>Scroll Bar</p>
-                <div className="aboutMe" onMouseDown={changeShadowColor} onMouseLeave={changeShadowColor}>
+                <p className='scrollBar' onClick={toggleScrollBar}>Show Scroll Bar</p>
+                <div className="aboutMe" onMouseDown={changeShadowColor}>
                     <h1 className = "aboutMeName">Hi! I'm Bernard Calma</h1>
                     <h2 className = "aboutMeOccupation">I'm a Full Stack Developer</h2>
                     <p className="introduction">More than 1 year of experience in Full Stack Development (<span>React</span>, <span>Node</span>, <span>Python</span>, <span>Express</span>, <span>Flask</span>, <span>Django</span>, <span>SQL</span> and <span>NoSQL</span>) and 10 years of experience in the IT Industry in different line of business. Expert in troubleshooting, analysis, advanced resolution procedures and complex problem solving. Skilled in Six Sigma, Cloud Computing, Team/Project Management and Automation.</p>
