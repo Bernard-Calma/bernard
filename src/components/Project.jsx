@@ -14,6 +14,7 @@ const Project = (props) => {
             props.setShow(props.projects.length-1)  
         } else props.setShow(props.show -= 1)
     }
+    
     return <div className="containerProject">     
                 <img className="projectImage" src={props.project.screenshot} alt={props.project.name}  onClick={props.showProject}/>
                 <div className="projectDetails back">

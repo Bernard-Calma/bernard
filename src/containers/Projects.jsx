@@ -55,7 +55,6 @@ const Projects = () => {
     let [show, setShow] = useState(0)
 
     const showProject = (event) => {
-        console.log(event.target.parentNode.lastChild)
         event.target.parentNode.lastChild.classList.remove('back')
         event.target.parentNode.lastChild.classList.add('front')
     }

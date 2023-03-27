@@ -8,6 +8,13 @@ import Header from './containers/Header';
 import Projects from './containers/Projects';
 
 const App = () => {
+
+  const handleHideProject = (event) => {
+    let projectToHide = document.querySelector(".front");
+    let target = event.target;
+    if (target !== projectToHide) projectToHide.classList.remove('front')
+  }
+
   useEffect(()=>{
     document.body.classList.add("hideScrollBar")
     window.addEventListener('scroll', () => {
@@ -28,7 +35,7 @@ const App = () => {
     })
   }, [])
   return (
-    <div className='App'>
+    <div className='App' onMouseUp={handleHideProject}>
       <Header />
       <AboutMe />
       <Experience />
