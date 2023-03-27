@@ -1,4 +1,16 @@
+import { useEffect, useLayoutEffect } from "react"
+
 const Navbar = () => {
+
+    const changeNavBar = () => {
+        console.log(window.innerWidthinnerWidth)
+    }
+
+    useLayoutEffect(()=> {
+        const windowListener = () => console.log("test")
+        window.addEventListener('resize', windowListener)
+        return () => window.removeEventListener('resize', windowListener)
+    }, [])
     return(
         <div className="sectioNavBar">
             <ul className="containerNavBar">
