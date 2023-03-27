@@ -78,8 +78,4 @@ header {
     .navBarItem > a {
         font-size: 16px;
     }
-
-    .navBarItem > a:hover {
-        font-size: 17px;
-    }
 }
