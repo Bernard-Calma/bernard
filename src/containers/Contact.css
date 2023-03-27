@@ -1,39 +1,51 @@
 /* CONTACT */  
-  
+
 #idContact {
     padding: 0;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
-#idContact > h1 {
+#idContact > h1, #lblSenderMessage {
     margin: 0;
 }
 
 li {
     list-style: none;
 }
-  
-  i {
+
+i {
     font-size: 100px;
     color: rgb(6, 194, 219)
-  }
-  
-  textarea {
+}
+
+.fa-linkedin:hover {
+    color: rgb(0, 114, 177);
+}
+
+.fa-github:hover {
+    color: black;
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 172, 238);
+}
+
+
+textarea {
     height: 300px;
     resize: none;
-  }
-  
-  .socialMedia {
+}
+
+.socialMedia {
     display: flex;
-    justify-content: center;
     justify-content: space-around;
-  }
-  
-  /* Send Email */
-  .formContactMe {
+}
+
+/* Send Email */
+.formContactMe {
     display: flex;
     width: 50%;
-    height: 400px;
+    height: 500px;
     padding: 1% 10%;
     flex-direction: column;
     margin: 20px auto;
@@ -41,54 +53,45 @@ li {
     border-radius: 50px;
     border: solid  #e0fbfc;
     box-shadow: 0 0 5px 1px #98c1d9;
-  }
-  
-  .formContactMe > label {
+}
+
+.formContactMe > label {
     width: 50%;
     display: flex;
     justify-content: space-between;
     margin: 1% auto;
     font-family: 'roboto';
-  }
+}
 
-  #lblSenderMessage {
-    margin: 0;
-  }
-
-  input {
+input {
     font-size: 16px;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     width: 200px;
     align-self: end;
     margin: 5px auto 0;
     font-family: "Space Mono", sans-serif;
     background-color: rgb(6, 194, 219);
     color: rgb(23, 83, 107);
-  }
+}
 
-  input[type=submit]:active {
+input[type=submit]:active {
     transform: translateY(5px);
-  }
+}
 
-  textarea {
+textarea {
     font-size: 18px;
-  }
+}
 
 @media screen and (max-width: 1100px) {
-    
+
     .socialMedia, .contactInformation {
         padding: 0;
-        margin: 0;
     }
 
-    #idContact {
-        margin-bottom: 100px;
-    }
-    
     .formContactMe {
-        width: 90%;
+        width: 80%;
         height: 300px;
         padding: 20px;
         margin: auto;
@@ -96,8 +99,11 @@ li {
 
     .formContactMe > label{ 
         width: 100%;
-        justify-content: space-between;
     }
 
-   
+    i {
+        font-size: 50px;
+    }
+
+
 }
