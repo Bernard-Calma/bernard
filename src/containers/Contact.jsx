@@ -1,5 +1,5 @@
 import SendEmail from "../components/SendEmail"
-
+import './Contact.css'
 const Contact = () => {
     return(
         <section className="sectionContact reveal" id="idContact">
