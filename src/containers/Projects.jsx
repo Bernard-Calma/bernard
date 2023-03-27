@@ -39,32 +39,15 @@ const Projects = () => {
             summary: "Based on a 90's game called Tamagochi. Take care of your pet, feed, play with it. Fall inlove with it <3",
             skills: ["HTML", "CSS", "JavaScript"],
             screenshot: "images/projects/Tamagotchi.png"
-        }]
-    )
+        }
+    ])
 
     let [show, setShow] = useState(0)
-
-    const nextProject = () => {
-        if(show === projects.length - 1){
-            setShow(0)     
-        } else setShow(show += 1)
-        
-    }
-
-    const previousProject = () => {
-        if(show === 0){
-            setShow(projects.length-1)  
-        } else setShow(show -= 1)
-    }
 
     return(<>
         <section className="sectionProjects reveal" id="idProjects">
             <h1>PROJECTS</h1>
             <div className="containerProjects">
-                {/* <ProjectChange 
-                        direction = "previous"
-                        previousProject = {previousProject}
-                /> */}
                 {
                     projects.map((project, index) =>
                         <Project 
@@ -72,15 +55,10 @@ const Projects = () => {
                             index={index}
                             project={project}
                             show = {show}
-                            nextProject = {() => nextProject(index)}
-                            previousProject = {() => previousProject(index)}
+                            setShow = {setShow}
                         />
                     )
                 }
-                {/* <ProjectChange 
-                    direction = "next"
-                    nextProject = {nextProject}
-                /> */}
             </div>
         </section>
     </>
