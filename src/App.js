@@ -12,7 +12,7 @@ const App = () => {
   const handleHideProject = (event) => {
     let projectToHide = document.querySelector(".front");
     let target = event.target;
-    if (target !== projectToHide) projectToHide.classList.remove('front')
+    if (target !== projectToHide) projectToHide?.classList.remove('front')
   }
 
   useEffect(()=>{
