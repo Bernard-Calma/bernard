@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import AboutMe from './containers/AboutMe';
@@ -12,7 +12,7 @@ const App = () => {
   const handleHideProject = (event) => {
     let projectToHide = document.querySelector(".front");
     let target = event.target;
-    if (target !== projectToHide) projectToHide.classList?.remove('front')
+    if (target !== projectToHide) projectToHide?.classList?.remove('front')
   }
 
   useEffect(()=>{
