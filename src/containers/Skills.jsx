@@ -188,52 +188,13 @@ const Skills = () => {
         }
     ])
 
-    const [programingLanguages] = useState([
-        "JavaScript",
-        "Python",
-        "Java",
-        "C#",
-        "C++",
-        "Visual Basic",
-        "SQL",
-        "NoSQL",
-        "HTML",
-        "CSS",
-        'Lua'
-    ])
-
-    const [libraries] = useState([
-        "React",
-        "React Router",
-        "JSON",
-        "jQuery"
-    ])
-
-    const [frameworks] = useState([
-        "React Native",
-        "Redux",
-        "Bootstrap",
-        "ExpressJS",
-        "Flask",
-        "Django",
-        "EJS"
-    ])
-
-    const [databases] = useState([
-        'PostgreSQL',
-        'MongoDB',
-        'MySQL',
-        'Access'
-    ])
     return(
         <div className="aboutMeSkills">
             <h1 className="skillsHeader">Skills</h1>
             <div className="skillsList">
                 <h2>Languages</h2>
                 <div className="skillsSubList">
-                    { skillsList.map(skill => 
-                        //Return skill list if included in language array
-                        programingLanguages.some(val => val === skill.skill)
+                    { skillsList.map(skill => skill.category === "Programming Language"
                         ?
                         <SkillIcon 
                             skill = {skill}
@@ -244,9 +205,7 @@ const Skills = () => {
                 </div>
                 <h2>Frameworks</h2>
                 <div className="skillsSubList">
-                    { skillsList.map(skill => 
-                        // Return library list if included in language array
-                        frameworks.some(val => val === skill.skill)
+                    { skillsList.map(skill => skill.category === "Framework"
                         ?
                         <SkillIcon 
                             skill = {skill}
@@ -257,9 +216,7 @@ const Skills = () => {
                 </div>
                 <h2>Libraries</h2>
                 <div className="skillsSubList">
-                    { skillsList.map(skill => 
-                        // Return library list if included in language array
-                        libraries.some(val => val === skill.skill)
+                    { skillsList.map(skill => skill.category === "Library"
                         ?
                         <SkillIcon 
                             skill = {skill}
@@ -270,9 +227,7 @@ const Skills = () => {
                 </div>
                 <h2>Databases</h2>
                 <div className="skillsSubList">
-                    { skillsList.map(skill => 
-                        // Return library list if included in language array
-                        databases.some(val => val === skill.skill)
+                    { skillsList.map(skill => skill.category === "Database"
                         ?
                         <SkillIcon 
                             skill = {skill}
