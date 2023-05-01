@@ -16,7 +16,7 @@ const Projects = () => {
         },
         {
             name: "Spentrace",
-            websiteLink: "https://spentrace.herokuapp.com/",
+            websiteLink: "http://www.spentrace.com",
             frontEndRepo: "https://github.com/Bernard-Calma/spentrace-react",
             backEndRepo: "https://github.com/Bernard-Calma/spentrace_backend",
             summary: "This app can be used for simple budgeting tool, you can enter your earnings and expenses or expected cash flow everyday and will give you your how much you owe, your available spending and how much you'll need until the next expense.",
