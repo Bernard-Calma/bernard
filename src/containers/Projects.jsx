@@ -23,15 +23,15 @@ const Projects = () => {
             skills: ["HTML", "CSS", "JavaScript", "React", "MongoDB", "Express", "NodeJS"],
             screenshot: "images/projects/Spentrace.png"
         },
-        {
-            name: "NexChapters",
-            websiteLink: "https://nexchapters.herokuapp.com/",
-            frontEndRepo: "https://github.com/Bernard-Calma/nexchapters",
-            backEndRepo: "https://github.com/Bernard-Calma/nexchapter-backend",
-            summary: "An app that helps you track of your reading list",
-            skills: ["React", "Redux", "Python", "Django", "Javascript", "HTML", "CSS"],
-            screenshot: "images/projects/NexChapters.png"
-        }, 
+        // {
+        //     name: "NexChapters",
+        //     websiteLink: "https://nexchapters.herokuapp.com/",
+        //     frontEndRepo: "https://github.com/Bernard-Calma/nexchapters",
+        //     backEndRepo: "https://github.com/Bernard-Calma/nexchapter-backend",
+        //     summary: "An app that helps you track of your reading list",
+        //     skills: ["React", "Redux", "Python", "Django", "Javascript", "HTML", "CSS"],
+        //     screenshot: "images/projects/NexChapters.png"
+        // }, 
         {
             name: "Floating Shoe",
             websiteLink: "https://bernard-calma.github.io/project-1/",
