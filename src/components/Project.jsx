@@ -18,14 +18,14 @@ const Project = (props) => {
     return <div className="containerProject">     
                 <img className="projectImage" src={props.project.screenshot} alt={props.project.name}  onClick={props.showProject}/>
                 <div className="projectDetails back">
-                    <ProjectChange 
+                    {/* <ProjectChange 
                         direction = "previous"
                         previousProject = {previousProject}
                     />
                     <ProjectChange 
                         direction = "next"
                         nextProject = {nextProject}
-                    />
+                    /> */}
                     <h2 className={`projectTitle`}>{props.project.name}</h2>
                     <div className="containerProjectLinks">
                         <a href={props.project.websiteLink} target={'_blank'} rel={'noreferrer'} className="projectLink"><i className="fa-solid fa-link projectLinkIcon"></i></a>
